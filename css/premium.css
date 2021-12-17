@@ -1,0 +1,374 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* --------------- ↓ General ↓ ---------------- */
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #222831;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+span{
+    display: block;
+}
+
+/* --------------- ↑ General ↑ ---------------- */
+
+/* ---------------------------------------- */
+
+/* --------------- ↓ Nav 1 ↓ ---------------- */
+
+header{
+    position: sticky;
+    top: 0;
+    height: 90px;
+    z-index: 999;
+}
+
+.nav1{
+    height: 60px;
+    width: 100%;
+    background-color: #222831;
+}
+
+.logo{
+    position: absolute;
+    top: 5px;
+    z-index: 1000;
+}
+
+#signin{
+    position: absolute;
+    top: 22px;
+    right: 355px;
+}
+
+.signin{
+    color: #00ADB5;
+    position: absolute;
+    top: 20px;
+    right: 270px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+#register{
+    position: absolute;
+    top: 22px;
+    right: 225px;
+}
+
+.register{
+    color: #00ADB5;
+    position: absolute;
+    top: 20px;
+    right: 155px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+#list{
+    position: absolute;
+    top: 22px;
+    right: 100px;
+}
+
+.list{
+    color: #00ADB5;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+/* --------------- ↑ Nav 1 ↑ ---------------- */
+
+
+/* ---------------------------------------- */
+
+
+/* --------------- ↓ Nav 2 ↓ ---------------- */
+
+.nav2{
+    height: 30px;
+    width: 100%;
+    background-color: #00ADB5;
+}
+
+.menu2 ul{
+    list-style: none;
+    margin-left: 700px;
+    padding-top: 5px;
+}
+
+.menu2 li{
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 30px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.menu2 li a{
+    color: #EEEEEE;
+}
+
+.menu2 li a:hover{
+    color: #222831;
+    font-weight: bold;
+}
+
+/* --------------- ↑ Nav 2 ↑ ---------------- */
+
+
+/* ---------------------------------------- */
+
+/* --------------- ↓ Main ↓ ---------------- */
+
+.banner{
+    height: 600px;
+    margin: 30px 0 0 170px;
+    border-radius: 30px;
+    border-top: solid 5px #00ADB5;
+    border-bottom: solid 5px #00ADB5;
+}
+
+#beneficios{
+    margin-top: 50px;
+    height: 300px;
+    /* width: 100%; */
+    margin-left: 130px;
+    /* background-color: gold; */
+}
+
+#beneficioTickets{
+    display: inline-block;
+    /* background-color: red; */
+    height: 150px;
+    margin-left: 170px;
+    margin-top: 70px;
+}
+
+#beneficioTickets .tickets{
+    /* background-color: aqua; */
+    height: 150px;
+}
+
+#beneficioTickets h4{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #EEEEEE;
+}
+
+#beneficioDescuento{
+    display: inline-block;
+    /* background-color: red; */
+    height: 150px;
+    margin-left: 170px;
+    margin-top: 70px;
+}
+
+#beneficioDescuento .descuento{
+    /* background-color: aqua; */
+    height: 150px;
+}
+
+#beneficioDescuento h4{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #EEEEEE;
+}
+
+#beneficioCandy{
+    display: inline-block;
+    /* background-color: red; */
+    height: 150px;
+    margin-left: 170px;
+    margin-top: 70px;
+}
+
+#beneficioCandy .candy{
+    /* background-color: aqua; */
+    height: 150px;
+}
+
+#beneficioCandy h4{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #EEEEEE;
+}
+
+#beneficioPuntos{
+    display: inline-block;
+    /* background-color: red; */
+    height: 150px;
+    margin-left: 170px;
+    margin-top: 70px;
+}
+
+#beneficioPuntos .puntos{
+    /* background-color: aqua; */
+    height: 150px;
+}
+
+#beneficioPuntos h4{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #EEEEEE;
+}
+
+#botonSub{
+    /* background-color: red; */
+    /* display: inline-block; */
+    height: 50px;
+    /* width: 100%; */
+    margin-top: 100px;
+    margin-left: 760px;
+}
+
+#botonSub .subscribe{
+    /* background-color: gold; */
+    height: 50px;
+}
+
+/* --------------- ↑ Main ↑ ---------------- */
+
+/* ---------------------------------------- */
+
+/* --------------- ↓ Footer ↓ ---------------- */
+
+#separadorFooter{
+    background-color: #00ADB5;
+    height: 30px;
+    width: 100%;
+    margin-top: 150px;
+    border-radius: 5px;
+}
+
+.logofinal{
+    display: inline-block;
+}
+
+#logo{
+    height: 75px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 250px;
+    scroll-behavior: smooth;
+}
+
+/* --------------- ↓ Footer 1 ↓ ---------------- */
+
+.footer1{
+    display: inline-block;
+    margin-left: 70px;
+}
+
+.footer1 h4{
+    color: #EEEEEE;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer1 ul{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.footer1 ul li{
+    list-style-type: none;
+}
+
+.footer1 a{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer1 a:hover{
+    color: #00ADB5;
+}
+
+/* --------------- ↑ Footer 1 ↑ ---------------- */
+
+
+/* --------------- ↓ Footer 2 ↓ ---------------- */
+
+.footer2{
+    display: inline-block;
+    margin-left: 100px;
+}
+
+.footer2 h4{
+    color: #EEEEEE;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 39px;
+}
+
+.footer2 ul{
+    margin-bottom: 30px;
+}
+
+.footer2 ul li{
+    list-style-type: none;
+}
+
+.footer2 li{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+}
+
+/* --------------- ↑ Footer 2 ↑ ---------------- */
+
+
+/* --------------- ↓ Footer 3 ↓ ---------------- */
+
+.footer3{
+    display: inline-block;
+    margin-left: 100px;
+}
+
+.footer3 h4{
+    color: #EEEEEE;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 60px;
+}
+
+.footer3 ul{
+    margin-bottom: 30px;
+}
+
+.footer3 ul li{
+    list-style-type: none;
+}
+
+.footer3 li{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+}
+
+/* --------------- ↑ Footer 3 ↑ ---------------- */
+
+
+/* --------------- ↑ Footer ↑ ---------------- */

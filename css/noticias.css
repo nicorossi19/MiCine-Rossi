@@ -1,0 +1,846 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------- ↓ General ↓ ---------------- */
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #222831;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    /* position: sticky; */
+    top: 0;
+    height: 90px;
+    z-index: 999;
+}
+
+main span{
+    display: block;
+}
+
+/* --------------- ↑ General ↑ ---------------- */
+
+/* ---------------------------------------- */
+
+/* --------------- ↓ Nav 1 ↓ ---------------- */
+
+.nav1{
+    height: 60px;
+    width: 100%;
+    background-color: #222831;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.logo{
+    /* background: mediumaquamarine; */
+    display: flex;
+    align-items: center;
+}
+
+.menu1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    padding-right: 30px;
+}
+
+#signin span{
+    color: #00ADB5;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+#register span{
+    color: #00ADB5;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+#miList span{
+    color: #00ADB5;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.button a{
+    font-style: none;
+    color: #00ADB5;
+}
+
+.button a:hover{
+    color: #EEEEEE;
+}
+
+/* --------------- ↑ Nav 1 ↑ ---------------- */
+
+/* ---------------------------------------- */
+
+/* --------------- ↓ Nav 2 ↓ ---------------- */
+
+.nav2 .menu2{
+    height: 30px;
+    width: 100%;
+    background-color: #00ADB5;
+}
+
+.menu2 ul{
+    /* background-color: brown; */
+    height: 30px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.menu2 li{
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+.menu2 li a{
+    color: #EEEEEE;
+}
+
+.menu2 li a:hover{
+    color: #222831;
+    font-weight: bold;
+}
+
+/* --------------- ↑ Nav 2 ↑ ---------------- */
+
+/* ---------------------------------------- */
+
+/* --------------- ↓ Main ↓ ---------------- */
+
+#breakingNews{
+    display: flex;
+    justify-content: center;
+}
+
+#breakingNews h2{
+    position: absolute;
+    margin-bottom: 50px;
+    margin-right: 400px;
+    align-self: flex-end;
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px #222831;
+}
+
+#breakingNews img{
+    height: 600px;
+    margin-top: 30px;
+    border-radius: 30px;
+    border-top: solid 5px #00ADB5;
+    border-bottom: solid 5px #00ADB5;
+}
+
+#recentNews{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#recentNews .headline{
+    height: 200px;
+    display: flex;
+}
+
+.recentImg{
+    height: 190px;
+    margin: 30px 20px 0 0px;
+    border-radius: 20px;
+    border-top: solid 3px #00ADB5;
+    border-bottom: solid 3px #00ADB5;
+}
+
+.headline1 h3{
+    position: absolute;
+    margin-left: 30px;
+    align-self: flex-end;
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px #222831;
+    z-index: 2;
+}
+
+.headline2 h3{
+    position: absolute;
+    margin-left: 30px;
+    align-self: flex-end;
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px #222831;
+    z-index: 2;
+}
+
+.headline3 h3{
+    position: absolute;
+    margin-left: 30px;
+    align-self: flex-end;
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px #222831;
+    z-index: 2;
+}
+
+.separator{
+    background-color: #00ADB5;
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.separator h2{
+    padding-left: 170px;
+    color: #EEEEEE;
+    font-weight: bold;
+    font-family: 'Shippori Antique', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px #222831;
+}
+
+#newsWeek{
+    display: flex;
+    justify-content: center;
+}
+
+#newsWeek .news img{
+    height: 190px;
+    margin: 30px 20px 0 0px;
+    border-radius: 10px;
+    border-top: solid 2px #00ADB5;
+    border-bottom: solid 2px #00ADB5;
+}
+
+#newsWeek .headline{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.separatorForm{
+    background-color: #00ADB5;
+    height: 30px;
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+/* --------------- ↓ Formulario ↓ ---------------- */
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.info h2{
+    text-align: center;
+    color: #EEEEEE;
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Shippori Antique', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px #222831;
+}
+
+.info h6{
+    text-align: center;
+    color: #EEEEEE;
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Shippori Antique', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px #222831;
+}
+
+#form{
+    height: 500px;
+    width: 450px;
+    margin: auto;
+    margin-top: 30px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+    background-color: #00ADB5;
+    border-radius: 20px;
+    border: 2px #EEEEEE solid;
+}
+
+#form h3{
+    color: #EEEEEE;
+    text-align: center;
+    font-family: 'Shippori Antique', sans-serif;
+    font-size: 24px;
+    padding-bottom: 30px;
+    text-shadow: 1px 2px 2px #222831;
+}
+
+#form label{
+    display: block;
+    color: #EEEEEE;
+    font-family: 'Shippori Antique', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px #222831;
+}
+
+#form label input{
+    margin: auto;
+    display: block;
+    /* background-color: grey; */
+    margin-bottom: 20px;
+    height: 25px;
+    border-radius: 5px;
+    border: 2px #222831 solid;
+}
+
+#form .checkbox{
+    display: inline-block;
+    margin-bottom: 10px;
+    height: 15px;
+}
+
+#form .button{
+    background-color: #EEEEEE;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 25%;
+    height: 35px;
+    border-radius: 5px;
+    font-family: 'Shippori Antique', sans-serif;
+    font-size: 18px;
+}
+
+#form .button:hover{
+    cursor: pointer;
+}
+
+/* --------------- ↑ Formulario ↑ ---------------- */
+
+/* --------------- ↑ Main ↑ ---------------- */
+
+/* --------------- ↓ Footer ↓ ---------------- */
+
+footer{
+    background-color: #393E46;
+    width: 100%;
+    height: auto;
+    display: grid;
+    position: relative;
+    /* padding: 40px 170px; */
+}
+
+.container{
+    /* background: red; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 50px 0px 30px 250px;
+}
+
+.logoFooter{
+    width: 150px;
+}
+
+.sec h2{
+    position: relative;
+    margin-bottom: 30px;
+    font-family: 'Lato', sans-serif;
+    color: #00ADB5;
+}
+
+.sec li{
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    color: #EEEEEE;
+}
+
+.sec li a{
+    font-style: none;
+    color: #EEEEEE;
+}
+
+.sec li a:hover{
+    color: #00ADB5;
+    font-weight: bold;
+}
+
+/* --------------- ↑ Footer ↑ ---------------- */
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+
+/* --------------- ↓ Responsive 430 ↓ ---------------- */
+
+@media screen and (min-width: 430px){
+
+    /* --------- ↓ Nav 1 ↓ --------- */
+
+    .nav1{
+        /* background: crimson; */
+        /* border: 5px solid black; */
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+        padding-top: 30px;
+    }
+
+    .logo{
+        justify-self: center;
+        height: 16px;
+        /* background: chocolate; */
+    }
+
+    .menu1{
+        display: flex;
+        justify-self: center;
+        justify-content: space-around;
+        padding: 20px 0 30px 0px;
+        /* background: red; */
+    }
+
+    .button a{
+        font-size: 14px;
+    }
+
+    .icon{
+        display: none;
+        height: 13px;
+    }
+
+    /* --------- ↑ Nav 1 ↑ --------- */
+
+    /* --------- ↓ Nav 2 ↓ --------- */
+
+    .nav2 .menu2{
+        margin-top: 30px;
+        height: 30px;
+        width: 100%;
+        background-color: #00ADB5;
+    }
+    
+    .menu2 ul{
+        height: 30px;
+        gap: 15px;
+    }
+    
+    .menu2 li{
+        font-size: 13px;
+    }
+
+    /* .nav2{
+        display: none;
+    } */
+
+    /* --------- ↑ Nav 2 ↑ --------- */
+
+    /* ------------------ */
+
+    /* --------- ↓ Main ↓ --------- */
+
+    #breakingNews{
+        display: flex;
+        justify-content: center;
+    }
+
+    .longHeadline{
+        display: none;
+    }
+    
+    #breakingNews .shortHeadline{
+        position: absolute;
+        color: #EEEEEE;
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 2px #222831;
+        width: 100%;
+        padding-left: 200px;
+        margin-left: 50px;
+        align-self: flex-end;
+    }
+    
+    #breakingNews img{
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        border-radius: 10px;
+        border-top: solid 2px #00ADB5;
+        border-bottom: solid 2px #00ADB5;
+    }
+
+    #recentNews{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* flex-direction: column; */
+        gap: 10px;
+    }
+    
+    #recentNews .headline{
+        height: 200px;
+        display: flex;
+    }
+    
+    .recentImg{
+        width: 100%;
+        height: auto;
+        margin: 30px 20px 0 0px;
+        border-radius: 20px;
+        border-top: solid 3px #00ADB5;
+        border-bottom: solid 3px #00ADB5;
+    }
+    
+    .headline1 h3{
+        margin-left: 30px;
+        margin-top: 130px;
+        align-self: center;
+        font-size: 16px;
+    }
+    
+    .headline2 h3{
+        margin-left: 30px;
+        margin-top: 130px;
+        align-self: center;
+        font-size: 16px;
+    }
+    
+    .headline3 h3{
+        margin-left: 30px;
+        margin-top: 130px;
+        align-self: center;
+        font-size: 16px;
+    }
+
+    .separator{
+        border-radius: 0px;
+    }
+    
+    .separator h2{
+        padding-left: 150px;
+    }
+
+    #newsWeek{
+        flex-wrap: wrap;
+    }
+
+    .separatorForm{
+        border-radius: 0px;
+    }
+
+    /* --------- ↓ Formulario ↓ --------- */
+
+    .info{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .info h2{
+        text-align: center;
+        color: #EEEEEE;
+        margin-top: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Shippori Antique', sans-serif;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 2px #222831;
+    }
+    
+    .info h6{
+        display: none;
+    }
+
+    #form{
+        height: 450px;
+        width: 400px;
+    }
+
+    /* --------- ↑ Formulario ↑ --------- */
+
+    /* ------------------ */
+
+    /* --------- ↓ Footer ↓ --------- */
+
+    footer{
+        padding-top: 30px;
+    }
+    
+    .container{
+        column-gap: 15px;
+        padding: 0px 35px 30px 0px;
+    }
+    
+    .logoFooter{
+        display: none;
+    }
+    
+    .sec h2{
+        font-size: 18px;
+    }
+
+    .sec li a{
+        font-size: 12px;
+    }
+
+    /* --------- ↑ Footer ↑ --------- */
+
+}
+
+/* --------------- ↑ Responsive 430 ↑ ---------------- */
+
+/* ---------------------------------------- */
+
+/* --------------- ↓ Responsive 1368 ↓ ---------------- */
+
+@media screen and (min-width: 1368px){
+
+    header{
+        position: sticky;
+    }
+    
+    /* --------- ↓ Nav 1 ↓ --------- */
+
+    .nav1{
+        background-color: #222831;
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding-top: 0px;
+    }
+
+    #burgerMenu{
+        display: none;
+    }
+
+    .logo{
+        height: auto;
+        /* background: chocolate; */
+        justify-self: start;
+        margin-left: 10px;
+    }
+
+    .icon{
+        display: initial;
+    }
+
+    .menu1{
+        /* background-color: red; */
+        display: flex;
+        justify-self: end;  
+        padding-right: 30px;
+        padding-top: 30px;
+        gap: 30px;
+    }
+
+    .button a{
+        font-size: 16px;
+    }
+
+    /* --------- ↑ Nav 1 ↑ --------- */
+
+    /* ------------------ */
+
+    /* --------- ↓ Nav 2 ↓ --------- */
+
+    .nav2 .menu2{
+        margin-top: 0;
+    }
+    
+    .menu2 ul{
+        gap: 40px;
+    }
+    
+    .menu2 li{
+        font-size: 16px;
+    }
+
+    /* .nav2{
+        display: initial;
+    } */
+
+    /* --------- ↑ Nav 2 ↑ --------- */
+
+    /* ------------------ */
+
+    /* --------- ↓ Main ↓ --------- */
+
+    .shortHeadline{
+        display: none;
+    }
+
+    #breakingNews .longHeadline{
+        display: initial;
+        position: absolute;
+        color: #EEEEEE;
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 2px #222831;
+        width: 100%;
+        padding-left: 200px;
+        margin-left: 50px;
+        align-self: flex-end;
+    }
+    
+    #recentNews{
+        flex-wrap: nowrap;
+    }
+    
+    #recentNews .headline{
+        height: auto;
+        width: 100%;
+        display: flex;
+    }
+
+    .headline1 h3{
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    
+    .headline2 h3{
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    
+    .headline3 h3{
+        margin-left: 20px;
+        font-size: 20px;
+    }
+
+    .separator{
+        border-radius: 0px;
+    }
+    
+    .separator h2{
+        padding-left: 70px;
+    }
+
+    #newsWeek{
+        flex-wrap: wrap;
+    }
+
+    #newsWeek .news img{
+        height: 230px;
+        margin: 30px 20px 0 0px;
+        border-radius: 10px;
+        border-top: solid 2px #00ADB5;
+        border-bottom: solid 2px #00ADB5;
+    }
+
+    /* --------- ↓ Formulario ↓ --------- */
+
+    .info{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .info h2{
+        font-size: 30px;
+    }
+    
+    .info h6{
+        display: initial;
+        text-align: center;
+        color: #EEEEEE;
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: 'Shippori Antique', sans-serif;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 2px #222831;
+    }
+
+    #form{
+        height: 500px;
+        width: 450px;
+    }
+
+    /* --------- ↑ Formulario ↑ --------- */
+
+    /* ------------------ */
+
+    /* --------- ↓ Footer ↓ --------- */
+    
+    .logoFooter{
+        display: initial;
+    }
+    
+    .sec h2{
+        font-size: 24px;
+    }
+
+    .sec li a{
+        font-size: 16px;
+    }
+
+    /* --------- ↑ Footer ↑ --------- */
+
+}
+
+/* --------------- ↑ Responsive 1368 ↑ ---------------- */
+
+/* ---------------------------------------- */
+
+/* --------------- ↓ Responsive 1600 ↓ ---------------- */
+
+@media screen and (min-width: 1600px){
+
+    .menu2 ul{
+        gap: 50px;
+    }
+    
+    .menu2 li{
+        font-size: 18px;
+    }
+
+    #newsWeek .news img{
+        height: 190px;
+        margin: 30px 20px 0 0px;
+        border-radius: 10px;
+        border-top: solid 2px #00ADB5;
+        border-bottom: solid 2px #00ADB5;
+    }
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */

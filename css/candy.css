@@ -1,0 +1,697 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* --------------- ↓ General ↓ ---------------- */
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #222831;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* --------------- ↑ General ↑ ---------------- */
+
+
+/* ---------------------------------------- */
+
+
+/* --------------- ↓ Nav 1 ↓ ---------------- */
+
+header{
+    position: sticky;
+    top: 0;
+    height: 90px;
+    z-index: 999;
+}
+
+.nav1{
+    height: 60px;
+    width: 100%;
+    background-color: #222831;
+}
+
+.logo{
+    position: absolute;
+    top: 5px;
+    z-index: 1000;
+}
+
+#signin{
+    position: absolute;
+    top: 22px;
+    right: 355px;
+}
+
+.signin{
+    color: #00ADB5;
+    position: absolute;
+    top: 20px;
+    right: 270px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+#register{
+    position: absolute;
+    top: 22px;
+    right: 225px;
+}
+
+.register{
+    color: #00ADB5;
+    position: absolute;
+    top: 20px;
+    right: 155px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+#list{
+    position: absolute;
+    top: 22px;
+    right: 100px;
+}
+
+.list{
+    color: #00ADB5;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+/* --------------- ↑ Nav 1 ↑ ---------------- */
+
+
+/* ---------------------------------------- */
+
+
+/* --------------- ↓ Nav 2 ↓ ---------------- */
+
+.nav2{
+    height: 30px;
+    width: 100%;
+    background-color: #00ADB5;
+}
+
+.menu2 ul{
+    list-style: none;
+    margin-left: 700px;
+    padding-top: 5px;
+}
+
+.menu2 li{
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 30px;
+    font-family: 'Lato', sans-serif;
+}
+
+.menu2 li a{
+    color: #EEEEEE;
+}
+
+.menu2 li a:hover{
+    color: #222831;
+    font-weight: bold;
+}
+
+/* --------------- ↑ Nav 2 ↑ ---------------- */
+
+
+/* ---------------------------------------- */
+
+
+/* --------------- ↓ Main ↓ ---------------- */
+
+
+.banner{
+    height: 600px;
+    margin: 30px 0 0 170px;
+    border-radius: 30px;
+    border-top: solid 5px #00ADB5;
+    border-bottom: solid 5px #00ADB5;
+}
+
+/* --------------- ↓ Carrito ↓ ---------------- */
+
+.carrito{
+    display: inline-block;
+    position: absolute;
+    width: 600px;
+    height: 450px;
+    right: 150px;
+    top: 850px;
+    background-color: #EEEEEE;
+    border-radius: 30px;
+}
+
+.carrito h2{
+    text-align: center;
+    margin-top: 30px;
+    color: #222831;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.carrito .total{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 350px;
+    color: #222831;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.carrito .valor{
+    margin-left: 425px;
+    display: inline-block;
+    color: #222831;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.linea{
+    display: inline-block;
+    position: absolute;
+    background-color: #222831;
+    height: 2px;
+    width: 500px;
+    top: 1250px;
+    right: 200px;
+}
+
+/* --------------- ↑ Carrito ↑ ---------------- */
+
+
+/* --------------- ↓ Combos ↓ ---------------- */
+
+#combos{
+    background-color: #00ADB5;
+    width: 1145px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+#combos h2{
+    padding-left: 170px;
+    color: #EEEEEE;
+    font-weight: bold;
+    font-family: 'Shippori Antique', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px #222831;
+}
+
+.combos1{
+    display: inline-block;
+    margin: 50px 0 0 170px;
+}
+
+.combo1{
+    display: inline-block;
+}
+
+.combo1 h2{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#combo1{
+    position: absolute;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.combo2{
+    display: inline-block;
+    margin-left: 300px;
+}
+
+.combo2 h2{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#combo2{
+    position: absolute;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.combos2{
+    display: inline-block;
+    position: absolute;
+    margin-top: 350px;
+    left: 170px;
+    height: 300px;
+    width: 300px;
+}
+
+.combo3 h2{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#combo3{
+    position: absolute;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* --------------- ↑ Combos ↑ ---------------- */
+
+
+/* --------------- ↓ Pochoclos y Snacks ↓ ---------------- */
+
+#snacks{
+    background-color: #00ADB5;
+    width: 1145px;
+    margin-top: 550px;
+    border-radius: 5px;
+}
+
+#snacks h2{
+    padding-left: 170px;
+    color: #EEEEEE;
+    font-weight: bold;
+    font-family: 'Shippori Antique', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px #222831;
+}
+
+.snacks1{
+    display: inline-block;
+    margin: 50px 0 0 170px;
+}
+
+.snack1{
+    display: inline-block;
+}
+
+.snack1 h2{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#snack1{
+    position: absolute;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.snack2{
+    display: inline-block;
+    position: absolute;
+    margin-left: 270px;
+}
+
+.snack2 h2{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#snack2{
+    position: absolute;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.snacks2{
+    display: inline-block;
+    position: absolute;
+    height: 300px;
+    width: 500px;
+    margin-top: 350px;
+}
+
+.snack3{
+    display: inline-block;
+    position: absolute;
+    right: 250px;
+    height: 300px;
+    width: 450px;
+}
+
+.snack3 h2{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#snack3{
+    position: absolute;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.snack4{
+    display: inline-block;
+    position: absolute;
+    left: 270px;
+}
+
+.snack4 h2{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#snack4{
+    position: absolute;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* --------------- ↑ Pochoclos y Snacks ↑ ---------------- */
+
+
+/* --------------- ↓ Bebidas ↓ ---------------- */
+
+#bebidas{
+    background-color: #00ADB5;
+    width: 1145px;
+    margin-top: 550px;
+    border-radius: 5px;
+}
+
+#bebidas h2{
+    padding-left: 170px;
+    color: #EEEEEE;
+    font-weight: bold;
+    font-family: 'Shippori Antique', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px #222831;
+}
+
+.bebidas1{
+    display: inline-block;
+    margin: 50px 0 0 170px;
+}
+
+.bebida1{
+    display: inline-block;
+}
+
+.bebida1 h2{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#bebida1{
+    position: absolute;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.bebida2{
+    display: inline-block;
+    position: absolute;
+    padding-left: 320px;
+}
+
+.bebida2 h2{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#bebida2{
+    position: absolute;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.bebidas2{
+    display: inline-block;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    margin-top: 330px;
+    left: 170px;
+}
+
+.bebida3{
+    display: inline-block;
+}
+
+.bebida3 h2{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#bebida3{
+    position: absolute;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* --------------- ↑ Bebidas ↑ ---------------- */
+
+
+/* --------------- ↓ Golosinas ↓ ---------------- */
+
+#golosinas{
+    background-color: #00ADB5;
+    width: 1145px;
+    margin-top: 550px;
+    border-radius: 5px;
+}
+
+#golosinas h2{
+    padding-left: 170px;
+    color: #EEEEEE;
+    font-weight: bold;
+    font-family: 'Shippori Antique', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px #222831;
+}
+
+.golosinas1{
+    display: inline-block;
+    margin: 50px 0 0 170px;
+}
+
+.golosina1{
+    display: inline-block;
+}
+
+.golosina1 h2{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#golosina1{
+    position: absolute;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.golosina2{
+    display: inline-block;
+    position: absolute;
+    padding-left: 320px;
+}
+
+.golosina2 h2{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#golosina2{
+    position: absolute;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.golosinas2{
+    display: inline-block;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    margin-top: 330px;
+    left: 170px;
+}
+
+.golosina3{
+    display: inline-block;
+}
+
+.golosina3 h2{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#golosina3{
+    position: absolute;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* --------------- ↑ Golosinas ↑ ---------------- */
+
+
+/* --------------- ↑ Main ↑ ---------------- */
+
+/* ---------------------------------------- */
+
+/* --------------- ↓ Footer ↓ ---------------- */
+
+.separador{
+    margin-top: 550px;
+    height: 30px;
+    width: 100%;
+    background-color: #00ADB5;
+}
+
+.logofinal{
+    display: inline-block;
+    /* position: absolute; */
+    /* top: 3400px; */
+    /* left: 250px; */
+}
+
+#logo{
+    height: 75px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 250px;
+    scroll-behavior: smooth;
+    /* background-color: red; */
+}
+
+/* --------------- ↓ Footer 1 ↓ ---------------- */
+
+.footer1{
+    display: inline-block;
+    /* background-color: red; */
+    margin-left: 70px;
+}
+
+.footer1 h4{
+    color: #EEEEEE;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer1 ul{
+    /* background-color: red; */
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.footer1 ul li{
+    list-style-type: none;
+}
+
+.footer1 a{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer1 a:hover{
+    color: #00ADB5;
+}
+
+/* --------------- ↑ Footer 1 ↑ ---------------- */
+
+
+/* --------------- ↓ Footer 2 ↓ ---------------- */
+
+.footer2{
+    display: inline-block;
+    /* background-color: red; */
+    margin-left: 100px;
+}
+
+.footer2 h4{
+    color: #EEEEEE;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 39px;
+}
+
+.footer2 ul{
+    margin-bottom: 30px;
+}
+
+.footer2 ul li{
+    list-style-type: none;
+}
+
+.footer2 li{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+}
+
+/* --------------- ↑ Footer 2 ↑ ---------------- */
+
+
+/* --------------- ↓ Footer 3 ↓ ---------------- */
+
+.footer3{
+    display: inline-block;
+    /* background-color: red; */
+    margin-left: 100px;
+}
+
+.footer3 h4{
+    color: #EEEEEE;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 60px;
+}
+
+.footer3 ul{
+    margin-bottom: 30px;
+}
+
+.footer3 ul li{
+    list-style-type: none;
+}
+
+.footer3 li{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+}
+
+/* --------------- ↑ Footer 3 ↑ ---------------- */
+
+
+/* --------------- ↑ Footer ↑ ---------------- */

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/noticias.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../Imgs/favicon.png">
+    <title>Noticias - MiCine</title>
+</head>
+<body>
+
+    <!----------- ↓ Header ↓ ----------->
+
+    <header>
+
+        <!----------- ↓ Nav 1 ↓ ----------->
+
+        <nav class="nav1">
+            <div class="logo">
+                <a href="../index.html"><img src="../imgs/logo.png" alt="MiCine"></a>
+            </div>
+            <div class="menu1">
+                <div id="signin">
+                    <img src="../imgs/signin.png" alt="Ingresar">
+                    <span class="button signin"><a href="#">INGRESAR</a></span>
+                </div>
+                <div id="register">
+                    <img src="../Imgs/plus.png" alt="Unirme">
+                    <span class="button register"><a href="#">UNIRME</a></span>
+                </div>
+                <div id="miList">
+                    <img src="../Imgs/bookmarkblack.png" alt="Mi lista">
+                    <span class="button miList"><a href="#">MI LISTA</a></span>
+                </div>
+            </div>
+        </nav>
+
+        <!----------- ↑ Nav 1 ↑ ----------->
+
+        <!----------- ↓ Nav 2 ↓ ----------->
+
+        <nav class="nav2">
+            <div class="menu2">
+                <ul>
+                    <li><a class="barMenu movies" href="../index.html">CARTELERA</a></li>
+                    <li><a class="barMenu candy" href="candy.html">CANDY</a></li>
+                    <li><a class="barMenu merch" href="merch.html">MERCH</a></li>
+                    <li><a class="barMenu news" href="#">NOTICIAS</a></li>
+                    <li><a class="barMenu premium" href="premium.html">PREMIUM</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!----------- ↑ Nav 2 ↑ ----------->
+
+    </header>
+
+    <!----------- ↑ Header ↑ ----------->
+
+    <!---------------------->
+
+    <!----------- ↓ Main ↓ ----------->
+
+    <main>
+        <div id="breakingNews">
+            <h2 class="shortHeadline">Habrá nueva trilogía de Spider-Man con Tom Holland</h2>
+            <h2 class="longHeadline">Marvel y Sony seguirán trabajando juntos en una nueva <span>trilogía de 'Spider-Man' con Tom Holland</span></h2>
+            <img src="../Imgs/img7.jpg" alt="Spider-Man: No way home">
+        </div>
+        <div id="recentNews">
+            <div class="headline headline1">
+                <h3>The Walking Dead en orden cronológico</h3>
+                <img class="recentImg recientes1" src="../Imgs/recientes1.jpg" alt="The walking dead">
+            </div>
+            <div class="headline headline2">
+                <h3>'Euphoria' anuncia su regreso</h3>
+                <img class="recentImg recientes2" src="../Imgs/recientes2.jpg" alt="Euphoria">
+            </div>
+            <div class="headline headline3">
+                <h3>'Encanto' maravilló a Colombia</h3>
+                <img class="recentImg recientes3" src="../Imgs/recientes3.jpg" alt="Encanto">
+            </div>
+        </div>
+        <div class="separator">
+            <h2>NOTICIAS</h2>
+        </div>
+        <div id="newsWeek">
+            <div class="news news1">
+                <img src="../Imgs/noticias1.jpg" alt="Cobra Kai">
+                <h4 class="headline titular4">El futuro incierto de 'Cobra Kai': <span>sin final a la vista</span></h4>
+            </div>
+            <div class="news news2">
+                <img src="../Imgs/noticias2.jpg" alt="El Conjuro">
+                <h4 class="headline titular5">6 trilogías atípicas que mejoraron <span>con la segunda y tercera película</span></h4>
+            </div>
+            <div class="news news3">
+                <img src="../Imgs/noticias3.jpg" alt="Goya 2022">
+                <h4 class="headline titular6">Goya 2022: Lista completa <span>de nominados</span></h4>
+            </div>
+            <div class="news news4">
+                <img src="../Imgs/noticias4.jpg" alt="House of Gucci">
+                <h4 class="headline titular7">El verdadero motivo del crimen de <span>Patrizia Reggiani que Ridley Scott no contó</span></h4>
+            </div>
+        </div>
+        <div class="separatorForm"></div>
+
+        <!----------- ↓ Formulario ↓ ----------->
+        
+        <div class="info">
+            <h2 id="title">ENTERATE DE LAS ÚLTIMAS NOVEDADES ANTES QUE NADIE</h2>
+            <h6 id="subtitle">Suscribite al Newsletter de MiCine para recibir noticias de tus películas favoritas, ofertas exclusivas de nuestros productos y sorteos mensuales.</h6>
+        </div>
+        
+        <form id="form" action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
+            <legend>
+                <h3>Completá el formulario</h3>
+            </legend>
+            <label for="nombre">Nombre:
+                <input type="text" name="nombre" required>
+            </label>
+
+            <label for="apellido">Apellido:
+                <input type="text" name="apelldio" required>
+            </label>
+
+            <label for="email">Correo electrónico:
+                <input type="email" name="email" required>
+            </label>
+
+            <label for="checkbox">
+                <input class="checkbox" type="checkbox" name="acepta" value="1">
+                Deseo recibir noticias sobre estrenos.
+            </label>
+
+            <label for="checkbox">
+                <input class="checkbox" type="checkbox" name="acepta" value="2">
+                Deseo recibir ofertas exclusivas.
+            </label>
+
+            <label for="checkbox">
+                <input class="checkbox" type="checkbox" name="acepta" value="3">
+                Notificarme sobre sorteos.
+            </label>
+
+            <input class="button" type="submit" value="Unirme">
+        </form>
+
+        <!----------- ↑ Formulario ↑ ----------->
+
+    </main>
+
+    <!----------- ↑ Main ↑ ----------->
+
+    <!----------- ↓ Footer ↓ ----------->
+
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img class="logoFooter" src="../imgs/logo.png" alt="MiCine"></a>
+            </div>
+
+            <!-- ↓ Footer 1 ↓ -->
+
+            <div class="sec footer1">
+                <h2>Menú</h2>
+                <ul class="menu">
+                    <li><a href="../index.html">CARTELERA</a></li>
+                    <li><a href="candy.html">CANDY</a></li>
+                    <li><a href="merch.html">MERCH</a></li>
+                    <li><a href="#">NOTICIAS</a></li>
+                    <li><a href="premium.html">PREMIUM</a></li>
+                </ul>
+            </div>
+
+            <!-- ↑ Footer 1 ↑ -->
+
+            <!-- ↓ Footer 2 ↓ -->
+
+            <div class="sec footer2">
+                <h2>Soporte</h2>
+                <ul>
+                    <li>Ayuda</li>
+                    <li>Contacto</li>
+                    <li>Prensa</li>
+                    <li>Libro de quejas</li>
+                </ul>
+            </div>
+
+            <!-- ↑ Footer 2 ↑ -->
+
+            <!-- ↓ Footer 3 ↓ -->
+            
+            <div class="sec footer3">
+                <h2>Sucursales</h2>
+                <ul>
+                    <li>Sucursal 1</li>
+                    <li>Sucursal 2</li>
+                    <li>Sucursal 3</li>
+                </ul>
+            </div>
+
+            <!-- ↑ Footer 3 ↑ -->
+
+        </div>
+    </footer>
+
+    <!----------- ↑ Footer ↑ ----------->
+
+</body>
+</html>

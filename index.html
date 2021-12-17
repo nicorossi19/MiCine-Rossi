@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cartelera.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./Imgs/favicon.png">
+    <title>MiCine</title>
+</head>
+<body>
+
+    <!----------- ↓ Header ↓ ----------->
+
+    <header>
+
+        <!----------- ↓ Nav 1 ↓ ----------->
+
+        <nav class="nav1">
+            <!-- <div id="burgerMenu">
+                <img class="burgerMenu" src="./imgs/menu-burger.svg" alt="">
+            </div> -->
+            <div class="logo">
+                <a href="#"><img src="./imgs/logo.png" alt="MiCine"></a>
+            </div>
+            <div class="menu1">
+                <div id="signin">
+                    <img class="icon iconSignin" src="./imgs/signin.png" alt="Ingresar">
+                    <span class="button signin"><a href="#">INGRESAR</a></span>
+                </div>
+                <div id="register">
+                    <img class="icon iconSignup" src="./Imgs/plus.png" alt="Unirme">
+                    <span class="button register"><a href="#">UNIRME</a></span>
+                </div>
+                <div id="miList">
+                    <img class="icon iconMiList" src="./Imgs/bookmarkblack.png" alt="Mi lista">
+                    <span class="button miList"><a href="#">MI LISTA</a></span>
+                </div>
+            </div>
+        </nav>
+
+        <!----------- ↑ Nav 1 ↑ ----------->
+
+        <!----------- ↓ Nav 2 ↓ ----------->
+
+        <nav class="nav2">
+            <div class="menu2">
+                <ul>
+                    <li><a class="barMenu movies" href="#">CARTELERA</a></li>
+                    <li><a class="barMenu candy" href="./Pages/candy.html">CANDY</a></li>
+                    <li><a class="barMenu merch" href="./Pages/merch.html">MERCH</a></li>
+                    <li><a class="barMenu news" href="./Pages/noticias.html">NOTICIAS</a></li>
+                    <li><a class="barMenu premium" href="./Pages/premium.html">PREMIUM</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!----------- ↑ Nav 2 ↑ ----------->
+
+    </header>
+
+    <!----------- ↑ Header ↑ ----------->
+
+    <!---------------------->
+
+    <!----------- ↓ Main ↓ ----------->
+
+    <main>
+        <div id="slider">
+            <img class="slider spiderman2" src="./imgs/img8.jpg" alt="Spider-Man: No way home">
+        </div>
+
+        <!-- ↓ Selectores ↓ -->
+
+        <div id="selectors">
+            <form class="flexSelectors">
+                <select class="selector" id="selector1" name="">
+                    <option>SELECCIONÁ TU CINE</option>
+                    <option>CINE 1</option>
+                    <option>CINE 2</option>
+                    <option>CINE 3</option>
+                </select>
+                <select class="selector" id="selector2" name="">
+                    <option>SELECCIONÁ LA PELÍCULA</option>
+                    <option>PELÍCULA 1</option>
+                    <option>PELÍCULA 2</option>
+                    <option>PELÍCULA 3</option>
+                </select>
+            </form>
+        </div>
+
+        <!-- ↑ Selectores ↑ -->
+
+        <!-- ↓ Estrenos ↓ -->
+
+        <div id="premiereSection">
+            <div class="separator">
+                <h2>ESTRENOS</h2>
+            </div>
+            <div id="flexPremiere">
+                <img class="movie eternals" src="./imgs/eternals.jpg" alt="Eternos">
+                <img class="movie duel" src="./imgs/duel.jpg" alt="El último duelo">
+                <img class="movie dune" src="./imgs/dune.jpg" alt="Duna">
+                <img class="movie jbond" src="./imgs/007.jpg" alt="James Bond">
+                <div id="bookmarksPremiere">
+                    <img class="bookmark bookmark1" src="./imgs/bookmarkwhite.png" alt="">
+                    <img class="bookmark bookmark2" src="./imgs/bookmarkwhite.png" alt="">
+                    <img class="bookmark bookmark3" src="./imgs/bookmarkwhite.png" alt="">
+                    <img class="bookmark bookmark4" src="./imgs/bookmarkblack2.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- ↑ Estrenos ↑ -->
+
+        <!-- ↓ Mi Lista ↓ -->
+
+        <div id="miListSection">
+            <div class="separator">
+                <h2>MI LISTA</h2>
+            </div>
+            <div id="flexList">
+                <img class="movie terremoto" src="./imgs/terremoto.jpg" alt="Terremoto">
+                <img class="movie jbond" src="./imgs/007.jpg" alt="James Bond">
+                <div id="bookmarksList">
+                    <img class="bookmark bookmark5" src="./imgs/bookmarkblack2.png" alt="">
+                    <img class="bookmark bookmark6" src="./imgs/bookmarkblack2.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- ↑ Mi Lista ↑ -->
+
+        <!-- ↓ Todas ↓ -->
+
+        <div id="allMoviesSection">
+            <div class="separator">
+                <h2>TODAS LAS PELÍCULAS</h2>
+            </div>
+            <div id="flexAllMovies">
+                <img class="movie encanto" src="./imgs/encanto.jpg" alt="Encanto">
+                <img class="movie gucci" src="./imgs/gucci.jpg" alt="House of Gucci">
+                <img class="movie ron" src="./imgs/ron.jpg" alt="Ron da Error">
+                <img class="movie soho" src="./imgs/soho.jpg" alt="Last Night in Soho">
+                <div id="bookmarksAllMovies">
+                    <img class="bookmark bookmark7" src="./imgs/bookmarkwhite.png" alt="">
+                    <img class="bookmark bookmark8" src="./imgs/bookmarkwhite.png" alt="">
+                    <img class="bookmark bookmark9" src="./imgs/bookmarkwhite.png" alt="">
+                    <img class="bookmark bookmark10" src="./imgs/bookmarkwhite.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- ↑ Todas ↑ -->
+
+        <!-- ↓ Anticipadas ↓ -->
+
+        <div id="ticketSalesSection">
+            <div class="separator">
+                <h2>PRÓXIMOS ESTRENOS</h2>
+            </div>
+            <div id="flexTicketSales">
+                <img class="movie spiderman" src="./imgs/spiderman.jpg" alt="Spider-Man">
+                <img class="movie evil" src="./imgs/evil.jpg" alt="Resident Evil">
+                <img class="movie gorillaz" src="./imgs/gorillaz.jpg" alt="Gorillaz">
+                <div id="bookmarksTicketSales">
+                    <img class="bookmark bookmark11" src="./imgs/bookmarkwhite.png" alt="">
+                    <img class="bookmark bookmark12" src="./imgs/bookmarkwhite.png" alt="">
+                    <img class="bookmark bookmark13" src="./imgs/bookmarkwhite.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- ↑ Anticipadas ↑ -->
+
+    </main>
+
+    <!----------- ↑ Main ↑ ----------->
+
+    <!---------------------->
+
+    <!----------- ↓ Footer ↓ ----------->
+
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img class="logoFooter" src="./imgs/logo.png" alt="MiCine"></a>
+            </div>
+
+            <!-- ↓ Footer 1 ↓ -->
+
+            <div class="sec footer1">
+                <h2>Menú</h2>
+                <ul class="menu">
+                    <li><a href="#">CARTELERA</a></li>
+                    <li><a href="./Pages/candy.html">CANDY</a></li>
+                    <li><a href="./Pages/merch.html">MERCH</a></li>
+                    <li><a href="./Pages/noticias.html">NOTICIAS</a></li>
+                    <li><a href="./Pages/premium.html">PREMIUM</a></li>
+                </ul>
+            </div>
+
+            <!-- ↑ Footer 1 ↑ -->
+
+            <!-- ↓ Footer 2 ↓ -->
+
+            <div class="sec footer2">
+                <h2>Soporte</h2>
+                <ul>
+                    <li>Ayuda</li>
+                    <li>Contacto</li>
+                    <li>Prensa</li>
+                    <li>Libro de quejas</li>
+                </ul>
+            </div>
+
+            <!-- ↑ Footer 2 ↑ -->
+
+            <!-- ↓ Footer 3 ↓ -->
+            
+            <div class="sec footer3">
+                <h2>Sucursales</h2>
+                <ul>
+                    <li>Sucursal 1</li>
+                    <li>Sucursal 2</li>
+                    <li>Sucursal 3</li>
+                </ul>
+            </div>
+
+            <!-- ↑ Footer 3 ↑ -->
+
+        </div>
+    </footer>
+
+    <!----------- ↑ Footer ↑ ----------->
+</body>
+</html>

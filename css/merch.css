@@ -1,0 +1,463 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* --------------- ↓ General ↓ ---------------- */
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #222831;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* --------------- ↑ General ↑ ---------------- */
+
+/* ---------------------------------------- */
+
+/* --------------- ↓ Nav 1 ↓ ---------------- */
+
+header{
+    position: sticky;
+    top: 0;
+    height: 90px;
+    z-index: 999;
+}
+
+.nav1{
+    height: 60px;
+    width: 100%;
+    background-color: #222831;
+}
+
+.logo{
+    position: absolute;
+    top: 5px;
+    z-index: 1000;
+}
+
+#signin{
+    position: absolute;
+    top: 22px;
+    right: 355px;
+}
+
+.signin{
+    color: #00ADB5;
+    position: absolute;
+    top: 20px;
+    right: 270px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+#register{
+    position: absolute;
+    top: 22px;
+    right: 225px;
+}
+
+.register{
+    color: #00ADB5;
+    position: absolute;
+    top: 20px;
+    right: 155px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+#list{
+    position: absolute;
+    top: 22px;
+    right: 100px;
+}
+
+.list{
+    color: #00ADB5;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+/* --------------- ↑ Nav 1 ↑ ---------------- */
+
+
+/* ---------------------------------------- */
+
+
+/* --------------- ↓ Nav 2 ↓ ---------------- */
+
+.nav2{
+    height: 30px;
+    width: 100%;
+    background-color: #00ADB5;
+}
+
+.menu2 ul{
+    list-style: none;
+    margin-left: 700px;
+    padding-top: 5px;
+}
+
+.menu2 li{
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 30px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.menu2 li a{
+    color: #EEEEEE;
+}
+
+.menu2 li a:hover{
+    color: #222831;
+    font-weight: bold;
+}
+
+/* --------------- ↑ Nav 2 ↑ ---------------- */
+
+
+/* ---------------------------------------- */
+
+
+/* --------------- ↓ Main ↓ ---------------- */
+
+.slider{
+    height: 600px;
+    margin: 30px 0 0 170px;
+    border-radius: 30px;
+    border-top: solid 5px #00ADB5;
+    border-bottom: solid 5px #00ADB5;
+} /* Futuro carrusel con más imágenes */
+
+/* --------------- ↓ Carrito ↓ ---------------- */
+
+.carrito{
+    display: inline-block;
+    position: absolute;
+    width: 600px;
+    height: 450px;
+    right: 150px;
+    top: 850px;
+    background-color: #EEEEEE;
+    border-radius: 30px;
+}
+
+.carrito h2{
+    text-align: center;
+    margin-top: 30px;
+    color: #222831;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.carrito .total{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 350px;
+    color: #222831;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.carrito .valor{
+    margin-left: 425px;
+    display: inline-block;
+    color: #222831;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.linea{
+    display: inline-block;
+    position: absolute;
+    background-color: #222831;
+    height: 2px;
+    width: 500px;
+    top: 1250px;
+    right: 200px;
+}
+
+/* --------------- ↑ Carrito ↑ ---------------- */
+
+
+/* --------------- ↓ Merch ↓ ---------------- */
+
+#merch{
+    background-color: #00ADB5;
+    width: 1145px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+#merch h2{
+    padding-left: 170px;
+    color: #EEEEEE;
+    font-weight: bold;
+    font-family: 'Shippori Antique', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px #222831;
+}
+
+.merchs1{
+    display: inline-block;
+    margin: 50px 0 0 170px;
+}
+
+.merch1{
+    display: inline-block;
+}
+
+.merch1 h2{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#merch1{
+    position: absolute;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.merch2{
+    display: inline-block;
+    position: absolute;
+    padding-left: 245px;
+}
+
+.merch2 h2{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#merch2{
+    position: absolute;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.merchs2{
+    display: inline-block;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    margin-top: 300px;
+    left: 170px;
+}
+
+.merch3{
+    display: inline-block;
+}
+
+.merch3 h2{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#merch3{
+    position: absolute;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* --------------- ↑ Merch ↑ ---------------- */
+
+/* --------------- ↓ Sorteos ↓ ---------------- */
+
+#sorteo{
+    background-color: #00ADB5;
+    width: 1145px;
+    margin-top: 550px;
+    border-radius: 5px;
+}
+
+#sorteo h2{
+    padding-left: 170px;
+    color: #EEEEEE;
+    font-weight: bold;
+    font-family: 'Shippori Antique', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px #222831;
+}
+
+.sorteo p{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    margin-left: 170px;
+}
+
+.sorteos1{
+    display: inline-block;
+    margin: 0px 0 0 170px;
+}
+
+.sorteo1{
+    display: inline-block;
+}
+
+.sorteo1 h2{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#sorteo1{
+    position: absolute;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* --------------- ↑ Sorteos ↑ ---------------- */
+
+/* ---------------------------------------- */
+
+/* --------------- ↓ Footer ↓ ---------------- */
+
+.separador{
+    margin-top: 250px;
+    height: 30px;
+    width: 100%;
+    background-color: #00ADB5;
+}
+
+.logofinal{
+    display: inline-block;
+    /* position: absolute; */
+    /* top: 3400px; */
+    /* left: 250px; */
+}
+
+#logo{
+    height: 75px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 250px;
+    scroll-behavior: smooth;
+    /* background-color: red; */
+}
+
+/* --------------- ↓ Footer 1 ↓ ---------------- */
+
+.footer1{
+    display: inline-block;
+    /* background-color: red; */
+    margin-left: 70px;
+}
+
+.footer1 h4{
+    color: #EEEEEE;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer1 ul{
+    /* background-color: red; */
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.footer1 ul li{
+    list-style-type: none;
+}
+
+.footer1 a{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer1 a:hover{
+    color: #00ADB5;
+}
+
+/* --------------- ↑ Footer 1 ↑ ---------------- */
+
+
+/* --------------- ↓ Footer 2 ↓ ---------------- */
+
+.footer2{
+    display: inline-block;
+    /* background-color: red; */
+    margin-left: 100px;
+}
+
+.footer2 h4{
+    color: #EEEEEE;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 39px;
+}
+
+.footer2 ul{
+    margin-bottom: 30px;
+}
+
+.footer2 ul li{
+    list-style-type: none;
+}
+
+.footer2 li{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+}
+
+/* --------------- ↑ Footer 2 ↑ ---------------- */
+
+
+/* --------------- ↓ Footer 3 ↓ ---------------- */
+
+.footer3{
+    display: inline-block;
+    /* background-color: red; */
+    margin-left: 100px;
+}
+
+.footer3 h4{
+    color: #EEEEEE;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 60px;
+}
+
+.footer3 ul{
+    margin-bottom: 30px;
+}
+
+.footer3 ul li{
+    list-style-type: none;
+}
+
+.footer3 li{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+}
+
+/* --------------- ↑ Footer 3 ↑ ---------------- */
+
+
+/* --------------- ↑ Footer ↑ ---------------- */

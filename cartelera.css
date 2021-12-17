@@ -1,0 +1,721 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------- ↓ General ↓ ---------------- */
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #222831;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    /*position: sticky;*/
+    top: 0;
+    height: 90px;
+    z-index: 999;
+}
+
+/* --------------- ↑ General ↑ ---------------- */
+
+/* ---------------------------------------- */
+
+/* --------------- ↓ Nav 1 ↓ ---------------- */
+
+.nav1{
+    height: 60px;
+    width: 100%;
+    background-color: #222831;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.logo{
+    /* background: mediumaquamarine; */
+    display: flex;
+    align-items: center;
+}
+
+.menu1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    padding-right: 30px;
+}
+
+#signin span{
+    color: #00ADB5;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+#register span{
+    color: #00ADB5;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+#miList span{
+    color: #00ADB5;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.button a{
+    font-style: none;
+    color: #00ADB5;
+}
+
+.button a:hover{
+    color: #EEEEEE;
+}
+
+/* --------------- ↑ Nav 1 ↑ ---------------- */
+
+/* ---------------------------------------- */
+
+/* --------------- ↓ Nav 2 ↓ ---------------- */
+
+.nav2 .menu2{
+    height: 30px;
+    width: 100%;
+    background-color: #00ADB5;
+}
+
+.menu2 ul{
+    /* background-color: brown; */
+    height: 30px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.menu2 li{
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+.menu2 li a{
+    color: #EEEEEE;
+}
+
+.menu2 li a:hover{
+    color: #222831;
+    font-weight: bold;
+}
+
+/* --------------- ↑ Nav 2 ↑ ---------------- */
+
+/* ---------------------------------------- */
+
+/* --------------- ↓ Main ↓ ---------------- */
+
+#slider{
+    display: flex;
+    justify-content: center;
+    /* height: 70vh; */
+}
+
+.slider{
+    height: 600px;
+    margin-top: 30px;
+    border-radius: 30px;
+    border-top: 5px solid #00ADB5;
+    border-bottom: 5px solid #00ADB5;
+}
+
+/* --------------- ↓ Selectores ↓ ---------------- */
+
+#selectors{
+    /* background-color: red; */
+    margin: 50px 170px 50px 170px;
+}
+
+#selectors .selector{
+    height: 30px;
+    width: 250px;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #222831;
+    background-color: #EEEEEE;
+    border-radius: 5px;
+}
+
+option{
+    font-weight: bold;
+}
+
+#selector1:hover{
+    color: #EEEEEE;
+    background-color: #393E46;
+    border-color: #393E46;
+}
+
+#selector2:hover{
+    color: #EEEEEE;
+    background-color: #393E46;
+    border-color: #393E46;
+}
+
+/* --------------- ↑ Selectores ↑ ---------------- */
+
+.movie{
+    height: 510px;
+    border-top: 3px solid #00ADB5;
+    border-bottom: 3px solid #00ADB5;
+    border-radius: 15px;
+}
+
+.separator{
+    width: 100%;
+    background-color: #00ADB5;
+}
+
+.separator h2{
+    color: #EEEEEE;
+    font-family: 'Shippori Antique', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px #222831;
+    padding-left: 170px;
+}
+
+.bookmark{
+    height: 25px;
+}
+
+/* --------------- ↓ Estrenos ↓ ---------------- */
+
+#flexPremiere{
+    margin: 50px 170px 50px 170px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#bookmarksPremiere{
+    width: 750px;
+    margin: 20px 0 0 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 380px;
+    position: absolute;
+}
+
+/* --------------- ↑ Estrenos ↑ ---------------- */
+
+/* --------------- ↓ Mi Lista ↓ ---------------- */
+
+#flexList{
+    /* background-color: red; */
+    margin: 50px 170px 50px 170px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 65px;
+    position: relative;
+}
+
+#bookmarksList{
+    width: 750px;
+    margin: 20px 0 0 20px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: flex-start;
+    gap: 385px;
+    position: absolute;
+}
+
+/* --------------- ↑ Mi Lista ↑ ---------------- */
+
+/* --------------- ↓ Todas ↓ ---------------- */
+
+#flexAllMovies{
+    /* background-color: red; */
+    margin: 50px 170px 50px 170px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#bookmarksAllMovies{
+    width: 750px;
+    margin: 20px 0 0 20px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: flex-start;
+    gap: 380px;
+    position: absolute;
+}
+
+/* --------------- ↑ Todas ↑ ---------------- */
+
+/* --------------- ↓ Anticipadas ↓ ---------------- */
+
+#flexTicketSales{
+    /* background-color: red; */
+    margin: 50px 170px 50px 170px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 60px;
+    position: relative;
+}
+
+#bookmarksTicketSales{
+    width: 750px;
+    margin: 20px 0 0 20px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: flex-start;
+    gap: 380px;
+    position: absolute;
+}
+
+/* --------------- ↑ Anticipadas ↑ ---------------- */
+
+/* --------------- ↑ Main ↑ ---------------- */
+
+/* ---------------------------------------- */
+
+/* --------------- ↓ Footer ↓ ---------------- */
+
+footer{
+    background-color: #393E46;
+    width: 100%;
+    height: auto;
+    display: grid;
+    position: relative;
+    /* padding: 40px 170px; */
+}
+
+.container{
+    /* background: red; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 50px 0px 30px 250px;
+}
+
+.logoFooter{
+    width: 150px;
+}
+
+.sec h2{
+    position: relative;
+    margin-bottom: 30px;
+    font-family: 'Lato', sans-serif;
+    color: #00ADB5;
+}
+
+.sec li{
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    color: #EEEEEE;
+}
+
+.sec li a{
+    font-style: none;
+    color: #EEEEEE;
+}
+
+.sec li a:hover{
+    color: #00ADB5;
+    font-weight: bold;
+}
+
+/* --------------- ↑ Footer ↑ ---------------- */
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+
+/* --------------- ↓ Responsive 430 ↓ ---------------- */
+
+@media screen and (min-width: 430px){
+
+    /* --------- ↓ Nav 1 ↓ --------- */
+
+    .nav1{
+        /* background: crimson; */
+        /* border: 5px solid black; */
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+        padding-top: 30px;
+    }
+
+    #burgerMenu{
+        width: 30px;
+        position: absolute;
+        top: 25px;
+        left: 10px;
+    }
+
+    .burgerMenu{
+        height: 25px;
+    }
+
+    .logo{
+        justify-self: center;
+        height: 16px;
+        /* background: chocolate; */
+    }
+
+    .menu1{
+        display: flex;
+        justify-self: center;
+        justify-content: space-around;
+        padding: 20px 0 30px 0px;
+    }
+
+    .button a{
+        font-size: 14px;
+    }
+
+    .icon{
+        display: none;
+        height: 13px;
+    }
+
+    /* --------- ↑ Nav 1 ↑ --------- */
+
+    /* --------- ↓ Nav 2 ↓ --------- */
+
+    .nav2 .menu2{
+        margin-top: 30px;
+        height: 30px;
+        width: 100%;
+        background-color: #00ADB5;
+    }
+    
+    .menu2 ul{
+        height: 30px;
+        gap: 15px;
+    }
+    
+    .menu2 li{
+        font-size: 13px;
+    }
+
+    /* .nav2{
+        display: none;
+    } */
+
+    /* --------- ↑ Nav 2 ↑ --------- */
+
+    /* ------------------ */
+
+    /* --------- ↓ Main ↓ --------- */
+    
+    .slider{
+        height: auto;
+        width: 100%;
+        margin-top: 50px;
+        border-radius: 10px;
+        border-top: 2px solid #00ADB5;
+        border-bottom: 2px solid #00ADB5;
+    }
+
+    /* --------- ↓ Selectores ↓ --------- */
+
+    #selectors{
+        width: 100%;
+        margin: 30px 0 50px 0;
+    }
+
+    .flexSelectors{
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    #selectors .selector{
+        height: 30px;
+        width: 100%;
+        font-size: 11px;
+        border-radius: 2px;
+    }
+
+    /* --------- ↑ Selectores ↑ --------- */
+
+    .movie{
+        height: 310px;
+        border-top: 1px solid #00ADB5;
+        border-bottom: 1px solid #00ADB5;
+        border-radius: 5px;
+    }
+    
+    .separator h2{
+        text-shadow: 1px 1px 2px #222831;
+        padding-left: 20px;
+        font-size: 15px;
+    }
+
+    /* --------- ↓ Estrenos ↓ --------- */
+
+    #flexPremiere{
+        /* background-color: red; */
+        margin: 30px 0 50px 0;
+        gap: 9px;
+    }
+    
+    #bookmarksPremiere{
+        display: none;
+    }
+
+    /* --------- ↑ Estrenos ↑ --------- */
+
+    /* --------- ↓ Mi Lista ↓ --------- */
+
+    #flexList{
+        /* background-color: red; */
+        margin: 30px 0px 50px 0px;
+        gap: 9px;
+    }
+
+    #bookmarksList{
+        display: none;
+    }
+
+    /* --------- ↑ Mi Lista ↑ --------- */
+
+    /* --------- ↓ Todas ↓ --------- */
+
+    #flexAllMovies{
+        margin: 30px 0 50px 0;
+        gap: 9px;
+    }
+    
+    #bookmarksAllMovies{
+        display: none;
+    }
+
+    /* --------- ↑ Todas ↑ --------- */
+
+    /* --------- ↓ Anticipadas ↓ --------- */
+
+    #flexTicketSales{
+        margin: 30px 0 50px 0;
+        gap: 9px;
+    }
+    
+    #bookmarksTicketSales{
+        display: none;
+    }
+
+    /* --------- ↑ Anticipadas ↑ --------- */
+
+    /* --------- ↑ Main ↑ --------- */
+
+    /* ------------------ */
+
+    /* --------- ↓ Footer ↓ --------- */
+
+    footer{
+        padding-top: 30px;
+    }
+    
+    .container{
+        column-gap: 15px;
+        padding: 0px 35px 30px 0px;
+    }
+    
+    .logoFooter{
+        display: none;
+    }
+    
+    .sec h2{
+        font-size: 18px;
+    }
+
+    .sec li a{
+        font-size: 12px;
+    }
+
+    /* --------- ↑ Footer ↑ --------- */
+    
+}
+
+/* --------------- ↑ Responsive 430 ↑ ---------------- */
+
+/* ---------------------------------------- */
+
+/* --------------- ↓ Responsive 1368 ↓ ---------------- */
+
+@media screen and (min-width: 1368px){
+
+    header{
+        position: sticky;
+    }
+    
+    /* --------- ↓ Nav 1 ↓ --------- */
+
+    .nav1{
+        background-color: #222831;
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding-top: 0px;
+    }
+
+    #burgerMenu{
+        display: none;
+    }
+
+    .logo{
+        height: auto;
+        /* background: chocolate; */
+        justify-self: start;
+        margin-left: 10px;
+    }
+
+    .icon{
+        display: initial;
+    }
+
+    .menu1{
+        /* background-color: red; */
+        display: flex;
+        justify-self: end;  
+        padding-right: 30px;
+        padding-top: 30px;
+        gap: 30px;
+    }
+
+    .button a{
+        font-size: 16px;
+    }
+
+    /* --------- ↑ Nav 1 ↑ --------- */
+
+    /* ------------------ */
+
+    /* --------- ↓ Nav 2 ↓ --------- */
+
+    .nav2 .menu2{
+        margin-top: 0;
+    }
+    
+    .menu2 ul{
+        gap: 40px;
+    }
+    
+    .menu2 li{
+        font-size: 16px;
+    }
+
+    /* --------- ↑ Nav 2 ↑ --------- */
+
+    /* ------------------ */
+
+    /* --------- ↓ Main ↓ --------- */
+
+    #slider{
+        padding: 0 50px;
+    }
+
+    .slider{
+        height: 600px;
+        width: 100%;
+        margin: 50px 0px 30px 0px;
+        border-radius: 30px;
+        border-top: 5px solid #00ADB5;
+        border-bottom: 5px solid #00ADB5;
+    }
+
+    /* --------- ↓ Selectores ↓ --------- */
+
+    #selectors{
+        /* background-color: red; */
+        margin: 50px 0px 50px 0px;
+    }
+
+    .flexSelectors{
+        display: flex;
+        justify-content: flex-start;
+        gap: 5px;
+    }
+    
+    #selectors .selector{
+        height: 30px;
+        width: 250px;
+        font-size: 18px;
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        color: #222831;
+        background-color: #EEEEEE;
+        border-radius: 5px;
+    }
+
+    /* --------- ↑ Selectores ↑ --------- */
+
+    .movie{
+        height: 435px;
+        border-top: 3px solid #00ADB5;
+        border-bottom: 3px solid #00ADB5;
+        border-radius: 15px;
+    }
+    
+    .separator h2{
+        text-shadow: 2px 2px 2px #222831;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+    
+    /* --------- ↓ Footer ↓ --------- */
+    
+    .logoFooter{
+        display: initial;
+    }
+    
+    .sec h2{
+        font-size: 24px;
+    }
+
+    .sec li a{
+        font-size: 16px;
+    }
+
+    /* --------- ↑ Footer ↑ --------- */
+}
+
+/* --------------- ↑ Responsive 1368 ↑ ---------------- */
+
+/* ---------------------------------------- */
+
+/* --------------- ↓ Responsive 1600 ↓ ---------------- */
+
+@media screen and (min-width: 1600px){
+
+    .movie{
+        height: 550px;
+    }
+    
+    .menu2 ul{
+        gap: 50px;
+    }
+    
+    .menu2 li{
+        font-size: 18px;
+    }
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
