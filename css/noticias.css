@@ -12,6 +12,7 @@ a{
 
 body{
     background-color: #222831;
+    background-image: linear-gradient(to top, #001011, #393E46);
 }
 
 html{
@@ -411,6 +412,7 @@ footer{
     /* --------- ↓ Nav 1 ↓ --------- */
 
     .nav1{
+        background: #393E46;
         /* background: crimson; */
         /* border: 5px solid black; */
         display: grid;
