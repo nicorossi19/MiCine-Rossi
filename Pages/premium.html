@@ -1,145 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/premium.css">
+
+    <!-- Title -->
+
+    <title>Premium - MiCine</title>
+
+    <!-- Links -->
+
+    <!-- Fuentes -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../Imgs/favicon.png">
-    <title>Premium - MiCine</title>
+
+    <!-- Favicon -->
+
+    <link rel="shortcut icon" href="../imgs/favicon.png">
+
+    <!-- Link BS -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- Link estilos propios -->
+
+    <link rel="stylesheet" href="../css/premium.css">
 </head>
+
+<!-- Vista -->
+
 <body>
 
-<!----------- ↓ Header ↓ ----------->
+    <!-- Header -->
 
-    <header>
-    <!----------- ↓ Primer Navegador ↓ ----------->
-        <nav class="nav1">
-            <div class="logo">
-                <a href="../index.html"><img src="../imgs/logo.png" alt="logo"></a>
-            </div>
-            <div class="menu1">
-                <div>
-                    <img id="signin" src="../imgs/signin.png" alt="Ingresar">
-                    <span class="signin">INGRESAR</span>
+    <header class="container-fluid">
+
+        <!-- Nav 1 -->
+
+        <div class="nav1">
+            <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="../imgs/logo.png" alt="MiCine"></a>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#">INGRESAR</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">UNIRME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">MI LISTA</a></li>
+                    </ul>
                 </div>
-                <div>
-                    <img id="register" src="../imgs/plus.png" alt="Unirme"> <span class="register">UNIRME</span>
-                </div>
-                <div>
-                    <img id="list" src="../imgs/bookmarkblack.png" alt="Mi lista"> <span class="list">MI LISTA</span>
-                </div>
-            </div>
-        </nav>
-    <!----------- ↑ Primer Navegador ↑ ----------->
-    
-    <!----------- ↓ Segundo Navegador ↓ ----------->
-        <nav class="nav2"> 
-            <div class="menu2">
-                <ul>
-                    <li><a class="cartelera" href="../index.html">CARTELERA</a></li>
-                    <li><a class="candy" href="candy.html" target="_blank">CANDY</a></li>
-                    <li><a class="merch" href="merch.html" target="_blank">MERCH</a></li>
-                    <li><a class="noticias" href="noticias.html">NOTICIAS</a></li>
-                    <li><a class="premium" href="#">PREMIUM</a></li>
-                </ul>
-            </div>
-        </nav>
-    <!----------- ↑ Segundo Navegador ↑ ----------->
-    </header>
-    
-    <!----------- ↑ Header ↑ ----------->
-
-    <!----------- ↓ Main ↓ ----------->
-
-    <main>
-        <img class="banner" src="../imgs/premium.jpg" alt="Premium">
-        <div id="beneficios">
-
-            <div id="beneficioTickets">
-                <img class="tickets" src="../imgs/tickets.png" alt="">
-                <h4>2 ENTRADAS MENSUALES</h4>
-            </div>
-
-            <div id="beneficioDescuento">
-                <img class="descuento" src="../imgs/50off.png" alt="">
-                <h4>50% OFF en ENTRADAS</h4>
-            </div>
-
-            <div id="beneficioCandy">
-                <img class="candy" src="../imgs/candy.png" alt="">
-                <h4>25% OFF en CANDY</h4>
-            </div>
-
-            <div id="beneficioPuntos">
-                <img class="puntos" src="../imgs/puntos.png" alt="">
-                <h4>SUMÁ PUNTOS</h4>
-            </div>
-
-            <div id="botonSub">
-                <a href="#"><img class="subscribe" src="../imgs/subscribe.png" alt="Suscribite"></a>
-            </div> <!--Cambiar enlace a futuro-->
-
+            </nav>
         </div>
+
+        <!-- Nav 2 -->
+
+        <div class="nav2">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link cartelera" href="../index.html">CARTELERA</a></li>
+                <li class="nav-item"><a class="nav-link candy" href="candy.html">CANDY</a></li>
+                <li class="nav-item"><a class="nav-link merch" href="merch.html">MERCH</a></li>
+                <li class="nav-item"><a class="nav-link noticias" href="noticias.html">NOTICIAS</a></li>
+                <li class="nav-item"><a class="nav-link premium" href="#">PREMIUM</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main -->
+
+    <main class="container-fluid">
+
+        <!-- Banner -->
+
+        <div id="banner" class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="bannerPremium"></div>
+            </div>
+        </div>
+
+        <div id="beneficios" class="row">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12 premium">
+                <div class="tickets">
+                    <img src="../imgs/tickets.png" alt="">
+                    <h4>2 ENTRADAS MENSUALES</h4>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12 premium">
+                <div class="descuentos">
+                    <img src="../imgs/50off.png" alt="">
+                    <h4>50% OFF en ENTRADAS</h4>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12 premium">
+                <div class="candy">
+                    <img src="../imgs/candy.png" alt="">
+                    <h4>25% OFF en CANDY</h4>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12 premium">
+                <div class="puntos">
+                    <img src="../imgs/puntos.png" alt="">
+                    <h4>SUMÁ PUNTOS</h4>
+                </div>
+            </div>
+        </div>
+
+        <div id="botonSub">
+            <a href="#"><img class="subscribe" src="../imgs/subscribe.png" alt="Suscribite"></a>
+        </div>
+
     </main>
 
-    <!----------- ↓ Footer ↓ ----------->
+    <!-- Footer -->
 
-    <footer>
-        <div id="separadorFooter"></div>
-        <div class="logofinal">
-            <a href="#"><img id="logo" src="../imgs/logo.png" alt="logo"></a>
+    <footer class="container-fluid">
+
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-12 logo">
+                <a href="#"><img class="logo-footer" src="../imgs/logo-footer.png" alt=""></a>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-2 sec footer1">
+                <h2>Menú</h2>
+                <ul class="menu">
+                    <li><a href="../index.html">CARTELERA</a></li>
+                    <li><a href="candy.html">CANDY</a></li>
+                    <li><a href="merch.html">MERCH</a></li>
+                    <li><a href="noticias.html">NOTICIAS</a></li>
+                    <li><a href="#">PREMIUM</a></li>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-2 sec footer2">
+                <h2>Soporte</h2>
+                <ul>
+                    <li>Ayuda</li>
+                    <li>Contacto</li>
+                    <li>Prensa</li>
+                    <li>Libro de quejas</li>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-2 sec footer3">
+                <h2>Sucursales</h2>
+                <ul>
+                    <li>Sucursal 1</li>
+                    <li>Sucursal 2</li>
+                    <li>Sucursal 3</li>
+                </ul>
+            </div>
         </div>
-        <!----------- ↓ Footer 1 ↓ ----------->
-    
-        <div class="footer1">
-            <h4>Menú</h4>
-            <ul>
-                <li> <a href="../index.html">CARTELERA</a></li>
-                <li> <a href="candy.html" target="_blank">CANDY</a></li>
-                <li> <a href="#">MERCH</a></li>
-                <li> <a href="noticias.html">NOTICIAS</a></li>
-                <li> <a href="premium.html">PREMIUM</a></li>
-            </ul>
-        </div>
-    
-        <!----------- ↑ Footer 1 ↑ ----------->
-    
-        <!----------- ↓ Footer 2 ↓ ----------->
-    
-        <div class="footer2">
-            <h4>Soporte</h4>
-            <ul>
-                <li>Ayuda</li>
-                <li>Contacto</li>
-                <li>Prensa</li>
-                <li>Libro de quejas</li>
-            </ul>
-        </div>
-    
-        <!----------- ↑ Footer 2 ↑ ----------->
-    
-        <!----------- ↓ Footer 3 ↓ ----------->
-        
-        <div class="footer3">
-            <h4>Sucursales</h4>
-            <ul>
-                <li>Sucursal 1</li>
-                <li>Sucursal 2</li>
-                <li>Sucursal 3</li>
-            </ul>
-        </div>
-    
-        <!----------- ↑ Footer 3 ↑ ----------->
+
     </footer>
-    
-    <!----------- ↑ Footer ↑ ----------->
 
+    <!-- Scritps -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
