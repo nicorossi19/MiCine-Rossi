@@ -1,195 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cartelera.css">
+
+    <!-- Title -->
+
+    <title>Cartelera - MiCine</title>
+
+    <!-- Links -->
+
+    <!-- Fuentes -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./Imgs/favicon.png">
-    <title>MiCine</title>
+
+    <!-- Favicon -->
+
+    <link rel="shortcut icon" href="./imgs/favicon.png">
+
+    <!-- Link BS -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- Link estilos propios -->
+
+    <link rel="stylesheet" href="cartelera.css">
 </head>
+
+<!-- Vista -->
+
 <body>
 
-    <!----------- ↓ Header ↓ ----------->
+    <!-- Header -->
 
-    <header>
+    <header class="container-fluid">
 
-        <!----------- ↓ Nav 1 ↓ ----------->
+        <!-- Nav 1 -->
 
-        
+        <div class="nav1">
+            <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="./imgs/logo.png" alt="MiCine"></a>
 
-        <!----------- ↑ Nav 1 ↑ ----------->
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#">INGRESAR</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">UNIRME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">MI LISTA</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
-        <!----------- ↓ Nav 2 ↓ ----------->
+        <!-- Nav 2 -->
 
-        <nav class="nav2">
-            <div class="menu2">
-                <ul>
-                    <li><a class="barMenu movies" href="#">CARTELERA</a></li>
-                    <li><a class="barMenu candy" href="./Pages/candy.html">CANDY</a></li>
-                    <li><a class="barMenu merch" href="./Pages/merch.html">MERCH</a></li>
-                    <li><a class="barMenu news" href="./Pages/noticias.html">NOTICIAS</a></li>
-                    <li><a class="barMenu premium" href="./Pages/premium.html">PREMIUM</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <!----------- ↑ Nav 2 ↑ ----------->
+        <div class="nav2">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link cartelera" href="#">CARTELERA</a></li>
+                <li class="nav-item"><a class="nav-link candy" href="./pages/candy.html">CANDY</a></li>
+                <li class="nav-item"><a class="nav-link merch" href="./pages/merch.html">MERCH</a></li>
+                <li class="nav-item"><a class="nav-link noticias" href="./pages/noticias.html">NOTICIAS</a></li>
+                <li class="nav-item"><a class="nav-link premium" href="./pages/premium.html">PREMIUM</a></li>
+            </ul>
+        </div>
 
     </header>
 
-    <!----------- ↑ Header ↑ ----------->
-
     <!---------------------->
 
-    <!----------- ↓ Main ↓ ----------->
+    <!-- Main -->
 
-    <main>
-        <div id="slider">
-            <img class="slider spiderman2" src="./imgs/img8.jpg" alt="Spider-Man: No way home">
-        </div>
+    <main class="container-fluid">
 
-        <!-- ↓ Selectores ↓ -->
+        <!-- Carrusel -->
 
-        <div id="selectors">
-            <form class="flexSelectors">
-                <select class="selector" id="selector1" name="">
-                    <option>SELECCIONÁ TU CINE</option>
-                    <option>CINE 1</option>
-                    <option>CINE 2</option>
-                    <option>CINE 3</option>
-                </select>
-                <select class="selector" id="selector2" name="">
-                    <option>SELECCIONÁ LA PELÍCULA</option>
-                    <option>PELÍCULA 1</option>
-                    <option>PELÍCULA 2</option>
-                    <option>PELÍCULA 3</option>
-                </select>
-            </form>
-        </div>
-
-        <!-- ↑ Selectores ↑ -->
-
-        <!-- ↓ Estrenos ↓ -->
-
-        <div id="premiereSection">
-            <div class="separator">
-                <h2>ESTRENOS</h2>
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="#"><img src="./imgs/c1.jpg" class="d-block w-100" alt="Spider-Man"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#"><img src="./imgs/c2.jpg" class="d-block w-100" alt="Promo"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#"><img src="./imgs/c3.jpg" class="d-block w-100" alt="Matrix"></a>
+                </div>
             </div>
-            <div id="flexPremiere">
-                <img class="movie eternals" src="./imgs/eternals.jpg" alt="Eternos">
-                <img class="movie duel" src="./imgs/duel.jpg" alt="El último duelo">
-                <img class="movie dune" src="./imgs/dune.jpg" alt="Duna">
-                <img class="movie jbond" src="./imgs/007.jpg" alt="James Bond">
-                <div id="bookmarksPremiere">
-                    <img class="bookmark bookmark1" src="./imgs/bookmarkwhite.png" alt="">
-                    <img class="bookmark bookmark2" src="./imgs/bookmarkwhite.png" alt="">
-                    <img class="bookmark bookmark3" src="./imgs/bookmarkwhite.png" alt="">
-                    <img class="bookmark bookmark4" src="./imgs/bookmarkblack2.png" alt="">
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </button>
+        </div>
+
+        <!-- Selectores -->
+
+        <div class="selectores container-fluid">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle btn-lg" type="button" data-toggle="dropdown"
+                    aria-expanded="false">Seleccioná tu cine</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Cine 1</a>
+                    <a class="dropdown-item" href="#">Cine 2</a>
+                    <a class="dropdown-item" href="#">Cine 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle btn-lg" type="button" data-toggle="dropdown"
+                    aria-expanded="false">Seleccioná la película</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Película 1</a>
+                    <a class="dropdown-item" href="#">Película 2</a>
+                    <a class="dropdown-item" href="#">Película 3</a>
                 </div>
             </div>
         </div>
 
-        <!-- ↑ Estrenos ↑ -->
+        <!-- Separador -->
 
-        <!-- ↓ Mi Lista ↓ -->
+        <div class="separador separador-estrenos">
+            <h2>ESTRENOS</h2>
+        </div>
 
-        <div id="miListSection">
-            <div class="separator">
-                <h2>MI LISTA</h2>
-            </div>
-            <div id="flexList">
-                <img class="movie terremoto" src="./imgs/terremoto.jpg" alt="Terremoto">
-                <img class="movie jbond" src="./imgs/007.jpg" alt="James Bond">
-                <div id="bookmarksList">
-                    <img class="bookmark bookmark5" src="./imgs/bookmarkblack2.png" alt="">
-                    <img class="bookmark bookmark6" src="./imgs/bookmarkblack2.png" alt="">
+        <!-- Estrenos -->
+
+        <div id="premiere" class="container-fluid">
+            <div class="row">
+
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 premiere">
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-bookmark">
+                            <img src="./imgs/bookmarkwhite.png" alt="">
+                        </div>
+                        <img src="./imgs/eternals.jpg" class="card-img-top" alt="Eternos">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">Eternos</a></h4>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 premiere">
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-bookmark">
+                            <img src="./imgs/bookmarkwhite.png" alt="">
+                        </div>
+                        <img src="./imgs/duel.jpg" class="card-img-top" alt="El último duelo">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">El último duelo</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 premiere">
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-bookmark">
+                            <img src="./imgs/bookmarkwhite.png" alt="">
+                        </div>
+                        <img src="./imgs/dune.jpg" class="card-img-top" alt="Duna">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">Duna</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 premiere">
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-bookmark">
+                            <img src="./imgs/bookmarkblack.png" alt="">
+                        </div>
+                        <img src="./imgs/gucci.jpg" class="card-img-top" alt="Gucci">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">La casa Gucci</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 premiere">
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-bookmark">
+                            <img src="./imgs/bookmarkwhite.png" alt="">
+                        </div>
+                        <img src="./imgs/gbs.jpg" class="card-img-top" alt="Ghostbusters">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">Cazafantasmas: El legado</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 premiere">
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-bookmark">
+                            <img src="./imgs/bookmarkblack.png" alt="">
+                        </div>
+                        <img src="./imgs/spiderman.jpg" class="card-img-top" alt="Spider-Man">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">Spiderman: sin camino a casa</a></h4>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
-        <!-- ↑ Mi Lista ↑ -->
+        <!-- Separador -->
 
-        <!-- ↓ Todas ↓ -->
+        <div class="separador separador-miLista">
+            <h2>MI LISTA</h2>
+        </div>
 
-        <div id="allMoviesSection">
-            <div class="separator">
-                <h2>TODAS LAS PELÍCULAS</h2>
-            </div>
-            <div id="flexAllMovies">
-                <img class="movie encanto" src="./imgs/encanto.jpg" alt="Encanto">
-                <img class="movie gucci" src="./imgs/gucci.jpg" alt="House of Gucci">
-                <img class="movie ron" src="./imgs/ron.jpg" alt="Ron da Error">
-                <img class="movie soho" src="./imgs/soho.jpg" alt="Last Night in Soho">
-                <div id="bookmarksAllMovies">
-                    <img class="bookmark bookmark7" src="./imgs/bookmarkwhite.png" alt="">
-                    <img class="bookmark bookmark8" src="./imgs/bookmarkwhite.png" alt="">
-                    <img class="bookmark bookmark9" src="./imgs/bookmarkwhite.png" alt="">
-                    <img class="bookmark bookmark10" src="./imgs/bookmarkwhite.png" alt="">
+        <!-- Mi lista -->
+
+        <div id="miLista" class="container-fluid">
+            <div class="row">
+
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 miLista">
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-bookmark">
+                            <img src="./imgs/bookmarkblack.png" alt="">
+                        </div>
+                        <img src="./imgs/spiderman.jpg" class="card-img-top" alt="Spider-Man">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">Spiderman: sin camino a casa</a></h4>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 miLista">
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-bookmark">
+                            <img src="./imgs/bookmarkblack.png" alt="">
+                        </div>
+                        <img src="./imgs/gucci.jpg" class="card-img-top" alt="La casa Gucci">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">La casa Gucci</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 miLista">
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-bookmark">
+                            <img src="./imgs/bookmarkblack.png" alt="">
+                        </div>
+                        <img src="./imgs/007.jpg" class="card-img-top" alt="James Bond">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">Sin tiempo para morir</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 miLista">
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-bookmark">
+                            <img src="./imgs/bookmarkblack.png" alt="">
+                        </div>
+                        <img src="./imgs/morbius.jpg" class="card-img-top" alt="Morbius">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">Morbius</a></h4>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
-        <!-- ↑ Todas ↑ -->
+        <!-- Separador -->
 
-        <!-- ↓ Anticipadas ↓ -->
+        <div class="separador separador-todas">
+            <h2>TODAS LAS PELÍCULAS</h2>
+        </div>
 
-        <div id="ticketSalesSection">
-            <div class="separator">
-                <h2>PRÓXIMOS ESTRENOS</h2>
-            </div>
-            <div id="flexTicketSales">
-                <img class="movie spiderman" src="./imgs/spiderman.jpg" alt="Spider-Man">
-                <img class="movie evil" src="./imgs/evil.jpg" alt="Resident Evil">
-                <img class="movie gorillaz" src="./imgs/gorillaz.jpg" alt="Gorillaz">
-                <div id="bookmarksTicketSales">
-                    <img class="bookmark bookmark11" src="./imgs/bookmarkwhite.png" alt="">
-                    <img class="bookmark bookmark12" src="./imgs/bookmarkwhite.png" alt="">
-                    <img class="bookmark bookmark13" src="./imgs/bookmarkwhite.png" alt="">
+        <!-- Todas -->
+
+        <div id="todas" class="container-fluid">
+            <div class="row">
+
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 todas">
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-bookmark">
+                            <img src="./imgs/bookmarkwhite.png" alt="">
+                        </div>
+                        <img src="./imgs/asb.jpg" class="card-img-top" alt="Amor sin barreras">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">Amor sin barreras</a></h4>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 todas">
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-bookmark">
+                            <img src="./imgs/bookmarkwhite.png" alt="">
+                        </div>
+                        <img src="./imgs/lcf.jpg" class="card-img-top" alt="La crónica francesa">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">La crónica francesa</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 todas">
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-bookmark">
+                            <img src="./imgs/bookmarkblack.png" alt="">
+                        </div>
+                        <img src="./imgs/007.jpg" class="card-img-top" alt="007">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">Sin tiempo para morir</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 todas">
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-bookmark">
+                            <img src="./imgs/bookmarkwhite.png" alt="">
+                        </div>
+                        <img src="./imgs/matrix.jpg" class="card-img-top" alt="Matrix">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">Matrix: resurrecciones</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 todas">
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-bookmark">
+                            <img src="./imgs/bookmarkwhite.png" alt="">
+                        </div>
+                        <img src="./imgs/evil.jpg" class="card-img-top" alt="Resident Evil">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">Resident Evil</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 todas">
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-bookmark">
+                            <img src="./imgs/bookmarkblack.png" alt="">
+                        </div>
+                        <img src="./imgs/spiderman.jpg" class="card-img-top" alt="Spider-Man">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">Spiderman: sin camino a casa</a></h4>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
-        <!-- ↑ Anticipadas ↑ -->
+        <!-- Separador -->
+
+        <div class="separador separador-proximos">
+            <h2>PRÓXIMOS ESTRENOS</h2>
+        </div>
+
+        <!-- Próximos estrenos -->
+
+        <div id="proximos" class="container-fluid">
+            <div class="row">
+
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 proximos">
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-bookmark">
+                            <img src="./imgs/bookmarkblack.png" alt="">
+                        </div>
+                        <img src="./imgs/morbius.jpg" class="card-img-top" alt="Morbius">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">Morbius</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 proximos">
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-bookmark">
+                            <img src="./imgs/bookmarkwhite.png" alt="">
+                        </div>
+                        <img src="./imgs/ecos.jpg" class="card-img-top" alt="Ecos">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">Ecos de un crimen</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 proximos">
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-bookmark">
+                            <img src="./imgs/bookmarkwhite.png" alt="">
+                        </div>
+                        <img src="./imgs/scream.jpg" class="card-img-top" alt="Scream">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">Scream 5</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 proximos">
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-bookmark">
+                            <img src="./imgs/bookmarkwhite.png" alt="">
+                        </div>
+                        <img src="./imgs/sing.jpg" class="card-img-top" alt="Sing">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">Sing 2</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 proximos">
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-bookmark">
+                            <img src="./imgs/bookmarkwhite.png" alt="">
+                        </div>
+                        <img src="./imgs/elAro.jpg" class="card-img-top" alt="El aro">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">El Aro</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 proximos">
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-bookmark">
+                            <img src="./imgs/bookmarkwhite.png" alt="">
+                        </div>
+                        <img src="./imgs/kingsMan.jpg" class="card-img-top" alt="King's Man">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">King's Man: el origen</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
     </main>
 
-    <!----------- ↑ Main ↑ ----------->
-
     <!---------------------->
 
-    <!----------- ↓ Footer ↓ ----------->
+    <!-- Footer -->
 
-    <footer>
-        <div class="container">
-            <div class="logo">
-                <a href="#"><img class="logoFooter" src="./imgs/logo.png" alt="MiCine"></a>
+    <footer class="container-fluid">
+
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-12 logo">
+                <a href="#"><img class="logo-footer" src="./imgs/logo-footer.png" alt=""></a>
             </div>
-
-            <!-- ↓ Footer 1 ↓ -->
-
-            <div class="sec footer1">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-2 sec footer1">
                 <h2>Menú</h2>
                 <ul class="menu">
                     <li><a href="#">CARTELERA</a></li>
-                    <li><a href="./Pages/candy.html">CANDY</a></li>
-                    <li><a href="./Pages/merch.html">MERCH</a></li>
-                    <li><a href="./Pages/noticias.html">NOTICIAS</a></li>
-                    <li><a href="./Pages/premium.html">PREMIUM</a></li>
+                    <li><a href="./pages/candy.html">CANDY</a></li>
+                    <li><a href="./pages/merch.html">MERCH</a></li>
+                    <li><a href="./pages/noticias.html">NOTICIAS</a></li>
+                    <li><a href="./pages/premium.html">PREMIUM</a></li>
                 </ul>
             </div>
-
-            <!-- ↑ Footer 1 ↑ -->
-
-            <!-- ↓ Footer 2 ↓ -->
-
-            <div class="sec footer2">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-2 sec footer2">
                 <h2>Soporte</h2>
                 <ul>
                     <li>Ayuda</li>
@@ -198,12 +488,7 @@
                     <li>Libro de quejas</li>
                 </ul>
             </div>
-
-            <!-- ↑ Footer 2 ↑ -->
-
-            <!-- ↓ Footer 3 ↓ -->
-            
-            <div class="sec footer3">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-2 sec footer3">
                 <h2>Sucursales</h2>
                 <ul>
                     <li>Sucursal 1</li>
@@ -211,12 +496,19 @@
                     <li>Sucursal 3</li>
                 </ul>
             </div>
-
-            <!-- ↑ Footer 3 ↑ -->
-
         </div>
     </footer>
 
-    <!----------- ↑ Footer ↑ ----------->
+    <!-- Scritps -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
 </body>
 </html>
