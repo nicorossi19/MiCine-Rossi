@@ -327,6 +327,10 @@ footer .row {
         font-size: 13px;
     }
 
+    .peliculas{
+        justify-content: center;
+    }
+
     /* Footer */
 
     .logo-footer {

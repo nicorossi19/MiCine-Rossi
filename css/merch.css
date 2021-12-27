@@ -1,464 +1,513 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* --------------- ↓ General ↓ ---------------- */
+/* General */
 
-a{
-    text-decoration: none;
-}
-
-body{
-    background-color: #222831;
-    background-image: linear-gradient(to top, #001011, #393E46);
-}
-
-html{
+html {
     scroll-behavior: smooth;
 }
 
-/* --------------- ↑ General ↑ ---------------- */
+body {
+    background-color: #222831;
+    /* background-image: linear-gradient(to top, #000000, #222831); */
+}
 
-/* ---------------------------------------- */
-
-/* --------------- ↓ Nav 1 ↓ ---------------- */
-
-header{
+header {
     position: sticky;
-    top: 0;
-    height: 90px;
     z-index: 999;
 }
 
-.nav1{
-    height: 60px;
-    width: 100%;
-    background-color: #222831;
-}
-
-.logo{
-    position: absolute;
-    top: 5px;
-    z-index: 1000;
-}
-
-#signin{
-    position: absolute;
-    top: 22px;
-    right: 355px;
-}
-
-.signin{
-    color: #00ADB5;
-    position: absolute;
-    top: 20px;
-    right: 270px;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-}
-
-#register{
-    position: absolute;
-    top: 22px;
-    right: 225px;
-}
-
-.register{
-    color: #00ADB5;
-    position: absolute;
-    top: 20px;
-    right: 155px;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-}
-
-#list{
-    position: absolute;
-    top: 22px;
-    right: 100px;
-}
-
-.list{
-    color: #00ADB5;
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-}
-
-/* --------------- ↑ Nav 1 ↑ ---------------- */
-
-
-/* ---------------------------------------- */
-
-
-/* --------------- ↓ Nav 2 ↓ ---------------- */
-
-.nav2{
-    height: 30px;
-    width: 100%;
-    background-color: #00ADB5;
-}
-
-.menu2 ul{
-    list-style: none;
-    margin-left: 700px;
-    padding-top: 5px;
-}
-
-.menu2 li{
-    display: inline-block;
-    font-size: 16px;
-    margin-left: 30px;
-    font-family: 'Lato', sans-serif;
-}
-
-
-.menu2 li a{
+h4 {
     color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.menu2 li a:hover{
-    color: #222831;
+/* ----------------- */
+
+/* Nav 1 */
+
+.nav1 .navbar {
+    background-color: #222831 !important;
+}
+
+.nav1 .nav-link {
+    color: #00ADB5 !important;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.nav1 .nav-link:hover {
+    color: #EEEEEE !important;
+}
+
+.navbar-toggler {
+    border-color: #222831 !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url(../imgs/mb.svg) !important;
+}
+
+/* Nav 2 */
+
+.nav2 {
+    background-color: #00ADB5;
+    height: 30px;
+}
+
+.nav2 .nav-link {
+    color: #EEEEEE !important;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    margin-left: 50px;
+    padding: 2px 0 0 0;
+    transition: font-size 100ms;
+}
+
+.nav2 .nav-link:hover {
+    font-size: 19px;
+    color: #222831 !important;
     font-weight: bold;
 }
 
-/* --------------- ↑ Nav 2 ↑ ---------------- */
+/* ----------------- */
 
+/* Main */
 
-/* ---------------------------------------- */
+/* Merch principal */
 
-
-/* --------------- ↓ Main ↓ ---------------- */
-
-.slider{
+#merch .merchPrincipal {
+    display: flex;
     height: 600px;
-    margin: 30px 0 0 170px;
-    border-radius: 30px;
-    border-top: solid 5px #00ADB5;
-    border-bottom: solid 5px #00ADB5;
-} /* Futuro carrusel con más imágenes */
+    background-image: url(../imgs/img6.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    border-radius: 20px;
+    border-top: 5px solid #00ADB5;
+    border-bottom: 5px solid #00ADB5;
+}
 
-/* --------------- ↓ Carrito ↓ ---------------- */
+/* Merch */
+
+.separador {
+    background-color: #00ADB5;
+    margin-top: 70px;
+}
+
+.separador h2 {
+    font-size: 24px;
+    color: #EEEEEE;
+    font-family: 'Shippori Antique', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px #222831;
+    padding-left: 15px;
+}
+
+.merch{
+    margin-top: 30px;
+}
+
+.tarjeta{
+    height: 300px;
+    border-radius: 20px;
+    transition: height 200ms;
+}
+
+.tarjeta:hover{
+    height: 305px;
+}
+
+/* Sorteos */
+
+.sorteos{
+    margin-top: 30px;
+}
+
+/* Total */
+
+.separador-carrito{
+    background-color: #EEEEEE;
+    height: 20px;
+}
 
 .carrito{
-    display: inline-block;
-    position: absolute;
-    width: 600px;
-    height: 450px;
-    right: 150px;
-    top: 850px;
     background-color: #EEEEEE;
-    border-radius: 30px;
+    margin-top: 10px;
+    height: 500px;
+    border-radius: 20px;
 }
 
-.carrito h2{
+.carrito .texto{
     text-align: center;
-    margin-top: 30px;
     color: #222831;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     letter-spacing: 2px;
+    font-size: 24px;
+    margin-bottom: 350px;
+    padding-top: 30px;
 }
 
-.carrito .total{
-    display: inline-block;
-    margin-left: 50px;
-    margin-top: 350px;
-    color: #222831;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.carrito .valor{
-    margin-left: 425px;
-    display: inline-block;
-    color: #222831;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    letter-spacing: 2px;
+#total-valor{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
 }
 
 .linea{
-    display: inline-block;
-    position: absolute;
     background-color: #222831;
     height: 2px;
-    width: 500px;
-    top: 1250px;
-    right: 200px;
+    margin: 0 5px 20px 5px;
 }
 
-/* --------------- ↑ Carrito ↑ ---------------- */
+/* ----------------- */
 
+/* Footer */
 
-/* --------------- ↓ Merch ↓ ---------------- */
-
-#merch{
-    background-color: #00ADB5;
-    width: 1145px;
+footer .row {
     margin-top: 30px;
-    border-radius: 5px;
-}
-
-#merch h2{
-    padding-left: 170px;
-    color: #EEEEEE;
-    font-weight: bold;
-    font-family: 'Shippori Antique', sans-serif;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 2px #222831;
-}
-
-.merchs1{
-    display: inline-block;
-    margin: 50px 0 0 170px;
-}
-
-.merch1{
-    display: inline-block;
-}
-
-.merch1 h2{
-    color: #EEEEEE;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    padding-bottom: 10px;
-}
-
-#merch1{
-    position: absolute;
-    height: 200px;
-    border-radius: 10px;
-}
-
-.merch2{
-    display: inline-block;
-    position: absolute;
-    padding-left: 245px;
-}
-
-.merch2 h2{
-    color: #EEEEEE;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    padding-bottom: 10px;
-}
-
-#merch2{
-    position: absolute;
-    height: 200px;
-    border-radius: 10px;
-}
-
-.merchs2{
-    display: inline-block;
-    position: absolute;
     height: 300px;
-    width: 300px;
-    margin-top: 300px;
-    left: 170px;
+    background-color: #393E46;
 }
 
-.merch3{
-    display: inline-block;
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.merch3 h2{
+.logo-footer {
+    height: 70px;
+}
+
+.sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sec h2 {
     color: #EEEEEE;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    padding-bottom: 10px;
 }
 
-#merch3{
-    position: absolute;
-    height: 200px;
-    border-radius: 10px;
+.sec ul {
+    list-style: none;
 }
 
-/* --------------- ↑ Merch ↑ ---------------- */
-
-/* --------------- ↓ Sorteos ↓ ---------------- */
-
-#sorteo{
-    background-color: #00ADB5;
-    width: 1145px;
-    margin-top: 550px;
-    border-radius: 5px;
-}
-
-#sorteo h2{
-    padding-left: 170px;
-    color: #EEEEEE;
-    font-weight: bold;
-    font-family: 'Shippori Antique', sans-serif;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 2px #222831;
-}
-
-.sorteo p{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color: #EEEEEE;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    font-size: 21px;
-    margin-left: 170px;
-}
-
-.sorteos1{
-    display: inline-block;
-    margin: 0px 0 0 170px;
-}
-
-.sorteo1{
-    display: inline-block;
-}
-
-.sorteo1 h2{
-    color: #EEEEEE;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    padding-bottom: 10px;
-}
-
-#sorteo1{
-    position: absolute;
-    height: 200px;
-    border-radius: 10px;
-}
-
-/* --------------- ↑ Sorteos ↑ ---------------- */
-
-/* ---------------------------------------- */
-
-/* --------------- ↓ Footer ↓ ---------------- */
-
-.separador{
-    margin-top: 250px;
-    height: 30px;
-    width: 100%;
-    background-color: #00ADB5;
-}
-
-.logofinal{
-    display: inline-block;
-    /* position: absolute; */
-    /* top: 3400px; */
-    /* left: 250px; */
-}
-
-#logo{
-    height: 75px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding-right: 80px;
-    padding-left: 250px;
-    scroll-behavior: smooth;
-    /* background-color: red; */
-}
-
-/* --------------- ↓ Footer 1 ↓ ---------------- */
-
-.footer1{
-    display: inline-block;
-    /* background-color: red; */
-    margin-left: 70px;
-}
-
-.footer1 h4{
-    color: #EEEEEE;
-    font-size: 25px;
-    font-family: 'Lato', sans-serif;
-}
-
-.footer1 ul{
-    /* background-color: red; */
-    margin-top: 15px;
-    margin-bottom: 30px;
-}
-
-.footer1 ul li{
-    list-style-type: none;
-}
-
-.footer1 a{
+.sec li {
+    font-style: none;
     color: #EEEEEE;
     font-family: 'Lato', sans-serif;
 }
 
-.footer1 a:hover{
+.sec li a {
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+.sec li a:hover {
     color: #00ADB5;
+    font-weight: bold;
 }
 
-/* --------------- ↑ Footer 1 ↑ ---------------- */
+/* ----------------- */
+/* ----------------- */
+/* ----------------- */
 
+/* Media queries */
 
-/* --------------- ↓ Footer 2 ↓ ---------------- */
+@media screen and (min-width: 430px) {
 
-.footer2{
-    display: inline-block;
-    /* background-color: red; */
-    margin-left: 100px;
+    /* Nav 2 */
+
+    .nav2 .nav {
+        padding-left: 40px;
+    }
+
+    .nav2 .nav-link {
+        font-size: 12px;
+        margin: 5px 10px 0 0;
+    }
+
+    .nav2 .nav-link:hover {
+        font-size: 13px;
+    }
+
+    /* Promo principal */
+
+    #merch .merchPrincipal{
+        height: 150px;
+        margin-top: 30px;
+        border-radius: 5px;
+        border-top: 1px solid #00ADB5;
+        border-bottom: 1px solid #00ADB5;
+    }
+
+    .tarjeta{
+        height: 200px;
+        border-radius: 20px;
+        transition: height 200ms;
+    }
+
+    .tarjeta:hover{
+        height: 203px;
+    }
+
+    /* Total */
+
+    .separador-carrito{
+        height: 10px;
+    }
+    
+    .carrito{
+        height: 30px;
+        border-radius: 10px;
+    }
+    
+    .carrito .texto{
+        display: none;
+    }
+    
+    .linea{
+        display: none;
+    }
+
+    /* Footer */
+
+    .logo-footer {
+        display: none;
+    }
+
+    .sec {
+        width: 50%;
+    }
+
+    .sec h2 {
+        font-size: 20px;
+    }
+
+    .sec li {
+        font-size: 10px;
+    }
 }
 
-.footer2 h4{
-    color: #EEEEEE;
-    font-size: 25px;
-    font-family: 'Lato', sans-serif;
-    margin-bottom: 39px;
+@media screen and (min-width: 768px) {
+
+    /* Nav 2 */
+
+    .nav2 .nav {
+        padding-right: 40px;
+    }
+
+    .nav2 .nav-link {
+        font-size: 16px;
+    }
+
+    .nav2 .nav-link:hover {
+        font-size: 18px;
+    }
+
+    /* Promo principal */
+
+    #merch .merchPrincipal{
+        height: 300px;
+        margin-top: 30px;
+        border-radius: 15px;
+        border-top: 3px solid #00ADB5;
+        border-bottom: 3px solid #00ADB5;
+    }
+
+    .tarjeta{
+        height: 360px;
+        border-radius: 20px;
+        transition: height 200ms;
+    }
+
+    .tarjeta:hover{
+        height: 363px;
+    }
+
+    /* Footer */
+
+    .logo-footer {
+        display: initial;
+    }
+
+    .sec {
+        width: 50%;
+    }
+
+    .sec h2 {
+        font-size: 20px;
+    }
+
+    .sec li {
+        font-size: 10px;
+    }
 }
 
-.footer2 ul{
-    margin-bottom: 30px;
+@media screen and (min-width: 992px) {
+
+    /* Nav 2 */
+
+    .nav2 {
+        background-color: #00ADB5;
+        height: 30px;
+    }
+
+    .nav2 .nav-link {
+        color: #EEEEEE !important;
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+        margin-left: 50px;
+        padding: 0;
+        transition: font-size 100ms;
+    }
+
+    .nav2 .nav-link:hover {
+        font-size: 19px;
+        color: #222831 !important;
+        font-weight: bold;
+    }
+
+    /* Tarjetas */
+
+    .tarjeta{
+        height: 230px;
+        border-radius: 20px;
+        transition: height 200ms;
+    }
+
+    .tarjeta:hover{
+        height: 233px;
+    }
 }
 
-.footer2 ul li{
-    list-style-type: none;
+@media screen and (min-width: 1200px) {
+
+    /* Promo principal */
+
+    #merch .merchPrincipal{
+        height: 400px;
+    }
+
+    /* Combos */
+
+    .tarjeta{
+        height: 180px;
+        border-radius: 20px;
+        transition: height 200ms;
+    }
+
+    .tarjeta:hover{
+        height: 183px;
+    }
+
+    /* Total */
+
+    .carrito{
+        height: 300px;
+    }
+
+    .carrito .texto{
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        margin-bottom: 200px;
+        padding-top: 15px;
+    }
+
+    .carrito .linea{
+        display: flex;
+    }
+
+    /* Footer */
+
+    .logo-footer {
+        display: initial;
+        height: 40px;
+    }
+
+    .sec h2 {
+        font-size: 24px;
+    }
+
+    .sec li {
+        font-size: 14px;
+    }
 }
 
-.footer2 li{
-    color: #EEEEEE;
-    font-family: 'Lato', sans-serif;
+@media screen and (min-width: 1600px){
+
+    /* Promo principal */
+
+    #merch .merchPrincipal {
+        display: flex;
+        height: 600px;
+        background-size: cover;
+        background-position: center;
+        margin-top: 30px;
+        margin-bottom: 70px;
+        border-radius: 20px;
+        border-top: 5px solid #00ADB5;
+        border-bottom: 5px solid #00ADB5;
+    }
+
+    /* Tarjetas */
+
+    .tarjeta{
+        height: 250px;
+        border-radius: 20px;
+        transition: height 200ms;
+    }
+    
+    .tarjeta:hover{
+        height: 253px;
+    }
+
+    /* Total */
+
+    .separador-carrito{
+        background-color: #EEEEEE;
+        height: 20px;
+    }
+
+    .carrito{
+        background-color: #EEEEEE;
+        margin-top: 10px;
+        height: 500px;
+        border-radius: 20px;
+    }
+
+    .carrito .texto{
+        text-align: center;
+        color: #222831;
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 24px;
+        margin-bottom: 350px;
+        padding-top: 30px;
+    }
+
+    #total-valor{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10px;
+    }
+
+    .linea{
+        background-color: #222831;
+        height: 2px;
+        margin: 0 5px 20px 5px;
+    }
+
 }
-
-/* --------------- ↑ Footer 2 ↑ ---------------- */
-
-
-/* --------------- ↓ Footer 3 ↓ ---------------- */
-
-.footer3{
-    display: inline-block;
-    /* background-color: red; */
-    margin-left: 100px;
-}
-
-.footer3 h4{
-    color: #EEEEEE;
-    font-size: 25px;
-    font-family: 'Lato', sans-serif;
-    margin-bottom: 60px;
-}
-
-.footer3 ul{
-    margin-bottom: 30px;
-}
-
-.footer3 ul li{
-    list-style-type: none;
-}
-
-.footer3 li{
-    color: #EEEEEE;
-    font-family: 'Lato', sans-serif;
-}
-
-/* --------------- ↑ Footer 3 ↑ ---------------- */
-
-
-/* --------------- ↑ Footer ↑ ---------------- */

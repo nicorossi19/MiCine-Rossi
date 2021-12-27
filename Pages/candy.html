@@ -1,231 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/candy.css">
+
+    <!-- Title -->
+
+    <title>Candy - MiCine</title>
+
+    <!-- Links -->
+
+    <!-- Fuentes -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../Imgs/favicon.png">
-    <title>Candy - MiCine</title>
+
+    <!-- Favicon -->
+
+    <link rel="shortcut icon" href="../imgs/favicon.png">
+
+    <!-- Link BS -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- Link estilos propios -->
+
+    <link rel="stylesheet" href="../css/candy.css">
 </head>
+
+<!-- Vista -->
+
 <body>
 
-<!----------- ↓ Header ↓ ----------->
+    <!-- Header -->
 
-    <header>
-<!----------- ↓ Primer Navegador ↓ ----------->
-        <nav class="nav1">
-            <div class="logo">
-                <a href="../index.html"><img src="../imgs/logo.png" alt="logo"></a>
-            </div>
-            <div class="menu1">
-                <div>
-                    <img id="signin" src="../imgs/signin.png" alt="Ingresar">
-                    <span class="signin">INGRESAR</span>
-                </div>
-                <div>
-                    <img id="register" src="../imgs/plus.png" alt="Unirme"> <span class="register">UNIRME</span>
-                </div>
-                <div>
-                    <img id="list" src="../imgs/bookmarkblack.png" alt="Mi lista"> <span class="list">MI LISTA</span>
-                </div>
-            </div>
-        </nav>
-<!----------- ↑ Primer Navegador ↑ ----------->
+    <header class="container-fluid">
 
-<!----------- ↓ Segundo Navegador ↓ ----------->
-        <nav class="nav2"> 
-            <div class="menu2">
-                <ul>
-                    <li><a class="cartelera" href="../index.html">CARTELERA</a></li>
-                    <li><a class="candy" href="#" target="_blank">CANDY</a></li>
-                    <li><a class="merch" href="merch.html" target="_blank">MERCH</a></li>
-                    <li><a class="noticias" href="noticias.html">NOTICIAS</a></li>
-                    <li><a class="premium" href="premium.html">PREMIUM</a></li>
-                </ul>
-            </div>
-        </nav>
-<!----------- ↑ Segundo Navegador ↑ ----------->
+        <!-- Nav 1 -->
+
+        <div class="nav1">
+            <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="../imgs/logo.png" alt="MiCine"></a>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#">INGRESAR</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">UNIRME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">MI LISTA</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Nav 2 -->
+
+        <div class="nav2">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link cartelera" href="../index.html">CARTELERA</a></li>
+                <li class="nav-item"><a class="nav-link candy" href="#">CANDY</a></li>
+                <li class="nav-item"><a class="nav-link merch" href="merch.html">MERCH</a></li>
+                <li class="nav-item"><a class="nav-link noticias" href="noticias.html">NOTICIAS</a></li>
+                <li class="nav-item"><a class="nav-link premium" href="premium.html">PREMIUM</a></li>
+            </ul>
+        </div>
     </header>
 
-<!----------- ↑ Header ↑ ----------->
+    <!-- Main -->
 
-<!----------- ↓ Main ↓ ----------->
+    <main class="container-fluid">
 
-    <main>
-        <img class="banner" src="../imgs/img5.jpg" alt="Promo MiCine">
+        <!-- Promo principal -->
 
-        <!----------- ↓ Carrito ↓ ----------->
-
-        <div class="carrito">
-            <h2>CARRITO</h2>
-            <h5 class="total">TOTAL</h5>
-            <h5 class="valor">$0</h5>
+        <div id="promo" class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="promoPrincipal"></div>
+            </div>
         </div>
-        <div class="linea"></div>
 
-        <!--------- ↑ Carrito ↑ --------->
+        <!-- Combos -->
 
-        <!----------- ↓ Combos ↓ ----------->
-
-        <div id="combos">
+        <div class="separador separador-combos">
             <h2>COMBOS</h2>
         </div>
-        <div class="combos1">
-            <div class="combo1">
-                <h2>Combo Familiar</h2>
-                <img id="combo1" src="../imgs/combo1.jpg" alt="Combo Familiar">
+
+        <div class="row">
+            <div class="col-xl-4 col-lg-6 col-md-12 combos">
+                <div>
+                    <h4>Combo Familiar</h4>
+                    <a href="#"><img class="tarjeta" src="../imgs/combo1.jpg" alt="Combo familiar"></a>
+                </div>
             </div>
-            <div class="combo2">
-                <h2>Combo Grande</h2>
-                <img id="combo2" src="../imgs/Combo2.jpg" alt="Combo Grande">
+
+            <div class="col-xl-4 col-lg-6 col-md-12 combos">
+                <div>
+                    <h4>Combo Grande</h4>
+                    <a href="#"><img class="tarjeta" src="../imgs/Combo2.jpg" alt="Combo grande"></a>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-6 col-md-12 combos">
+                <div>
+                    <h4>Combo Ghostbusters</h4>
+                    <a href="#"><img class="tarjeta" src="../imgs/Combo3.jpg" alt="Combo Ghostbusters"></a>
+                </div>
             </div>
         </div>
-        <div class="combos2">
-            <div class="combo3">
-                <h2>Combo Grande</h2>
-                <img id="combo3" src="../imgs/Combo3.jpg" alt="Combo Ghostbusters">
-            </div>
-        </div>
 
-        <!--------- ↑ Combos ↑ --------->
+        <!-- Snacks -->
 
-        <!----------- ↓ Pochoclos y Snacks ↓ ----------->
-
-        <div id="snacks">
+        <div class="separador separador-snacks">
             <h2>SNACKS</h2>
         </div>
-        <div class="snacks1">
-            <div class="snack1">
-                <h2>Balde de Pochoclos</h2>
-                <img id="snack1" src="../imgs/pochoclos1.jpg" alt="Balde">
+
+        <div class="row">
+            <div class="col-xl-4 col-lg-6 col-md-12 snacks">
+                <div>
+                    <h4>Balde de Pochoclos</h4>
+                    <a href="#"><img class="tarjeta" src="../imgs/pochoclos1.jpg" alt="Balde de Pochoclos"></a>
+                </div>
             </div>
-            <div class="snack2">
-                <h2>Bolsa de Pochoclos</h2>
-                <img id="snack2" src="../imgs/pochoclos2.jpg" alt="Bolsa">
+
+            <div class="col-xl-4 col-lg-6 col-md-12 snacks">
+                <div>
+                    <h4>Bolsa de Pochoclos</h4>
+                    <a href="#"><img class="tarjeta" src="../imgs/pochoclos2.jpg" alt="Bolsa de Pochoclos"></a>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-6 col-md-12 snacks">
+                <div>
+                    <h4>Nachos con Cheddar</h4>
+                    <a href="#"><img class="tarjeta" src="../imgs/snacks1.jpg" alt="Nachos con Cheddar"></a>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-6 col-md-12 snacks">
+                <div>
+                    <h4>Pancho Mi Cine</h4>
+                    <a href="#"><img class="tarjeta" src="../imgs/snacks2.jpg" alt="Pancho Mi Cine"></a>
+                </div>
             </div>
         </div>
-        <div class="snacks2">
-            <div class="snack3">
-                <h2>Nachos con Cheddar</h2>
-                <img id="snack3" src="../imgs/snacks1.jpg" alt="Nachos">
-            </div>
-            <div class="snack4">
-                <h2>Pancho Mi Cine</h2>
-                <img id="snack4" src="../imgs/snacks2.jpg" alt="Pancho">
-            </div>
-        </div>
 
-        <!----------- ↑ Pochoclos y Snacks ↑ ----------->
+        <!-- Bebidas -->
 
-        <!----------- ↓ Bebidas ↓ ----------->
-
-        <div id="bebidas">
+        <div class="separador separador-bebidas">
             <h2>BEBIDAS</h2>
         </div>
-        <div class="bebidas1">
-            <div class="bebida1">
-                <h2>Bebida Grande</h2>
-                <img id="bebida1" src="../imgs/bebidas1.jpg" alt="Gaseosa">
+
+        <div class="row">
+            <div class="col-xl-4 col-lg-6 col-md-12 bebidas">
+                <div>
+                    <h4>Bebida Grande</h4>
+                    <a href="#"><img class="tarjeta" src="../imgs/bebidas1.jpg" alt="Bebida Grande"></a>
+                </div>
             </div>
-            <div class="bebida2">
-                <h2>Agua Saborizada</h2>
-                <img id="bebida2" src="../imgs/bebidas2.jpg" alt="Agua Saborizada">
+
+            <div class="col-xl-4 col-lg-6 col-md-12 bebidas">
+                <div>
+                    <h4>Agua Saborizada</h4>
+                    <a href="#"><img class="tarjeta" src="../imgs/bebidas2.jpg" alt="Agua Saborizada"></a>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-6 col-md-12 bebidas">
+                <div>
+                    <h4>Agua</h4>
+                    <a href="#"><img class="tarjeta" src="../imgs/bebidas3.jpg" alt="Agua"></a>
+                </div>
             </div>
         </div>
-        <div class="bebidas2">
-            <div class="bebida3">
-                <h2>Agua</h2>
-                <img id="bebida3" src="../imgs/bebidas3.jpg" alt="Agua">
-            </div>
-        </div>
-        <!--------- ↑ Bebidas ↑ --------->
 
-        <!----------- ↓ Golosinas ↓ ----------->
+        <!-- Golosinas -->
 
-        <div id="golosinas">
+        <div class="separador separador-golosinas">
             <h2>GOLOSINAS</h2>
         </div>
-        <div class="golosinas1">
-            <div class="golosina1">
-                <h2>M&M Grande</h2>
-                <img id="golosina1" src="../imgs/golosinas1.jpg" alt="M&M">
+
+        <div class="row">
+            <div class="col-xl-4 col-lg-6 col-md-12 golosinas">
+                <div>
+                    <h4>M&M Grande</h4>
+                    <a href="#"><img class="tarjeta" src="../imgs/golosinas1.jpg" alt="M&M Grande"></a>
+                </div>
             </div>
-            <div class="golosina2">
-                <h2>Agua Saborizada</h2>
-                <img id="golosina2" src="../imgs/golosinas2.jpg" alt="Rocklets">
+
+            <div class="col-xl-4 col-lg-6 col-md-12 golosinas">
+                <div>
+                    <h4>Rocklets Grande</h4>
+                    <a href="#"><img class="tarjeta" src="../imgs/golosinas2.jpg" alt="Rocklets Grande"></a>
+                </div>
             </div>
-        </div>
-        <div class="golosinas2">
-            <div class="golosina3">
-                <h2>Agua</h2>
-                <img id="golosina3" src="../imgs/golosinas3.jpg" alt="Haribo">
+
+            <div class="col-xl-4 col-lg-6 col-md-12 golosinas">
+                <div>
+                    <h4>Gomitas Haribo</h4>
+                    <a href="#"><img class="tarjeta" src="../imgs/golosinas3.jpg" alt="Gomitas Haribo"></a>
+                </div>
             </div>
         </div>
 
-        <!--------- ↑ Golosinas ↑ --------->
+        <!-- Total -->
+
+        <div class="separador separador-carrito"></div>
+
+        <div class="row">
+            <div class="col-xl-4 col-lg-12">
+                <div class="carrito">
+                    <h2 class="texto">CARRITO</h2>
+                    <div class="linea"></div>
+                    <div id="total-valor">
+                        <h5 class="total">TOTAL</h5>
+                        <h5 class="valor">$0</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
 
-<!----------- ↑ Main ↑ ----------->
+    <!-- Footer -->
 
-<!----------- ↓ Footer ↓ ----------->
+    <footer class="container-fluid">
 
-    <footer>
-        <div class="separador"></div>
-        <div class="logofinal">
-            <a href="#"><img id="logo" src="../imgs/logo.png" alt="logo"></a>
-        </div>
-        <!----------- ↓ Footer 1 ↓ ----------->
-
-        <div class="footer1">
-            <h4>Menú</h4>
-            <ul>
-                <li> <a href="../index.html">CARTELERA</a></li>
-                <li> <a href="#" target="_blank">CANDY</a></li>
-                <li> <a href="merch.html" target="_blank">MERCH</a></li>
-                <li> <a href="noticias.html">NOTICIAS</a></li>
-                <li> <a href="premium.html">PREMIUM</a></li>
-            </ul>
-        </div>
-
-        <!----------- ↑ Footer 1 ↑ ----------->
-
-        <!----------- ↓ Footer 2 ↓ ----------->
-
-        <div class="footer2">
-            <h4>Soporte</h4>
-            <ul>
-                <li>Ayuda</li>
-                <li>Contacto</li>
-                <li>Prensa</li>
-                <li>Libro de quejas</li>
-            </ul>
-        </div>
-
-        <!----------- ↑ Footer 2 ↑ ----------->
-
-        <!----------- ↓ Footer 3 ↓ ----------->
-        
-        <div class="footer3">
-            <h4>Sucursales</h4>
-            <ul>
-                <li>Sucursal 1</li>
-                <li>Sucursal 2</li>
-                <li>Sucursal 3</li>
-            </ul>
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-12 logo">
+                <a href="#"><img class="logo-footer" src="../imgs/logo-footer.png" alt=""></a>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-2 sec footer1">
+                <h2>Menú</h2>
+                <ul class="menu">
+                    <li><a href="../index.html">CARTELERA</a></li>
+                    <li><a href="#">CANDY</a></li>
+                    <li><a href="merch.html">MERCH</a></li>
+                    <li><a href="noticias.html">NOTICIAS</a></li>
+                    <li><a href="premium.html">PREMIUM</a></li>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-2 sec footer2">
+                <h2>Soporte</h2>
+                <ul>
+                    <li>Ayuda</li>
+                    <li>Contacto</li>
+                    <li>Prensa</li>
+                    <li>Libro de quejas</li>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-2 sec footer3">
+                <h2>Sucursales</h2>
+                <ul>
+                    <li>Sucursal 1</li>
+                    <li>Sucursal 2</li>
+                    <li>Sucursal 3</li>
+                </ul>
+            </div>
         </div>
 
-        <!----------- ↑ Footer 3 ↑ ----------->
     </footer>
 
-<!----------- ↑ Footer ↑ ----------->
+    <!-- Scritps -->
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
