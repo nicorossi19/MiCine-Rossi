@@ -1,0 +1,137 @@
+
+/* Carrusel */
+
+.slide {
+    & .carousel-inner {
+        border-radius: 20px;
+        border-top: 5px solid $cyan;
+        border-bottom: 5px solid $cyan;
+    }
+    margin-top: 30px;
+    & .carousel-control-prev {
+        width: 5%;
+    }
+    & .carousel-control-next {
+        width: 5%;
+    }
+    
+}
+
+/* Selectores */
+
+.selectores {
+    margin-top: 40px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    & .dropdown {
+        display: inline-block;
+        & .btn {
+            background-color: $cream;
+            color: $lightGray;
+            font-family: $primaryFont;
+        }
+        & .btn:hover {
+            background-color: $lightGray;
+            color: $cream;
+            font-weight: bold;
+        }
+        & .dropdown-menu {
+            background-color: $lightGray;
+            & .dropdown-item {
+                color: $cream;
+                font-family: $primaryFont;
+            }
+            & .dropdown-item:hover {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+/* Separador */
+
+.separador {
+    width: 100%;
+    background-color: $cyan;
+    margin-top: 10px;
+    & h2 {
+        font-size: 24px;
+        color: $cream;
+        font-family: $secondaryFont;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 2px $darkBlue;
+        padding-left: 15px;
+    }
+}
+
+/* Estrenos */
+
+#premiere {
+    margin-top: 30px;
+    & .premiere {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/* Mi lista */
+
+#miLista {
+    margin-top: 30px;
+    & .miLista {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/* Todas */
+
+#todas {
+    margin-top: 30px;
+    & .todas {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/* Próximos estrenos */
+
+#proximos {
+    margin-top: 30px;
+    & .proximos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/* Imágenes */
+
+.card {
+    border: 0;
+    background-color: transparent;
+    & .card-bookmark {
+        position: absolute;
+        margin: 20px 0 0 20px;
+    }
+    & .card-img-top {
+        border-radius: 10px;
+        border-top: 2px solid $cyan;
+        border-bottom: 2px solid $cyan;
+    }
+    & .card-body {
+        background-color: $darkBlue;
+        & .card-title {
+            font-size: 18px;
+            & a {
+                font-family: $primaryFont;
+                text-decoration: none;
+                color: $cream;
+            }
+            & a:hover {
+                color: $cyan;
+            }
+        }
+    }
+}
