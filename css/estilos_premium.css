@@ -1,0 +1,308 @@
+/* ----------------- */
+/* Header */
+/* Nav 1 */
+.nav1 .navbar {
+  background-color: #222831 !important;
+}
+.nav1 .navbar .navbar-toggler {
+  border-color: #222831 !important;
+}
+.nav1 .navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url(../imgs/mb.svg) !important;
+}
+.nav1 .navbar .nav-link {
+  color: #00ADB5 !important;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  margin-left: 40px;
+}
+.nav1 .navbar .nav-link:hover {
+  color: #EEEEEE !important;
+}
+
+/* Nav 2 */
+.nav2 {
+  background-color: #00ADB5;
+  height: 30px;
+}
+.nav2 .nav-link {
+  color: #EEEEEE !important;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  margin-left: 50px;
+  padding: 2px 0 0 0;
+  transition: font-size 100ms;
+}
+.nav2 .nav-link:hover {
+  font-size: 19px;
+  color: #222831 !important;
+  font-weight: bold;
+}
+
+/* ----------------- */
+/* Main */
+#banner .bannerPremium {
+  display: flex;
+  height: 600px;
+  background-image: url(../imgs/premium.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-top: 30px;
+  border-radius: 20px;
+  border-top: 5px solid #00ADB5;
+  border-bottom: 5px solid #00ADB5;
+}
+
+#beneficios {
+  margin: 100px 0;
+  padding: 0 100px;
+}
+#beneficios .premium {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#beneficios h4 {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: #EEEEEE;
+  margin-top: 20px;
+}
+
+#beneficios img {
+  height: 150px;
+  margin-left: 100px;
+}
+
+#botonSub {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+#botonSub .subscribe {
+  height: 50px;
+}
+
+/* ----------------- */
+/* Footer */
+footer .row {
+  margin-top: 30px;
+  height: 300px;
+  background-color: #393E46;
+}
+footer .row .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .row .logo .logo-footer {
+  height: 70px;
+}
+footer .row .sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+footer .row .sec h2 {
+  color: #EEEEEE;
+}
+footer .row .sec ul {
+  list-style: none;
+}
+footer .row .sec ul li {
+  font-style: none;
+  color: #EEEEEE;
+  font-family: "Lato", sans-serif;
+}
+footer .row .sec ul li a {
+  text-decoration: none;
+  color: #EEEEEE;
+}
+footer .row .sec ul li a:hover {
+  color: #00ADB5;
+  font-weight: bold;
+}
+
+/* ----------------- */
+/* ----------------- */
+/* ----------------- */
+/* Media queries */
+@media screen and (min-width: 430px) {
+  /* Nav 2 */
+  .nav2 .nav {
+    padding-left: 40px;
+  }
+  .nav2 .nav .nav-link {
+    font-size: 12px;
+    margin: 5px 10px 0 0;
+  }
+  .nav2 .nav .nav-link:hover {
+    font-size: 13px;
+  }
+
+  /* Banner */
+  #banner .bannerPremium {
+    height: 150px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border-top: 1px solid #00ADB5;
+    border-bottom: 1px solid #00ADB5;
+  }
+
+  /* Beneficios */
+  #beneficios .premium {
+    margin-bottom: 30px;
+  }
+  #beneficios .premium img {
+    margin-left: 0;
+  }
+
+  /* Footer */
+  .logo-footer {
+    display: none;
+  }
+
+  .sec {
+    width: 50%;
+  }
+  .sec h2 {
+    font-size: 20px;
+  }
+  .sec li {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* Nav 2 */
+  .nav2 .nav {
+    padding-right: 40px;
+  }
+  .nav2 .nav .nav-link {
+    font-size: 16px;
+  }
+  .nav2 .nav .nav-link:hover {
+    font-size: 18px;
+  }
+
+  /* Banner */
+  #banner .bannerPremium {
+    height: 250px;
+    margin-top: 30px;
+    border-radius: 15px;
+    border-top: 3px solid #00ADB5;
+    border-bottom: 3px solid #00ADB5;
+  }
+
+  /* Beneficios */
+  #beneficios .premium {
+    margin-bottom: 30px;
+  }
+  #beneficios .premium img {
+    margin-left: 30px;
+  }
+
+  /* Footer */
+  .sec {
+    width: 50%;
+  }
+  .sec h2 {
+    font-size: 20px;
+  }
+  .sec li {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* Nav 2 */
+  .nav2 {
+    background-color: #00ADB5;
+    height: 30px;
+  }
+  .nav2 .nav-link {
+    color: #EEEEEE !important;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    margin-left: 50px;
+    padding: 0;
+    transition: font-size 100ms;
+  }
+  .nav2 .nav-link:hover {
+    font-size: 19px;
+    color: #222831 !important;
+    font-weight: bold;
+  }
+
+  /* Banner */
+  #banner .bannerPremium {
+    height: 350px;
+    margin-top: 30px;
+    border-radius: 15px;
+    border-top: 3px solid #00ADB5;
+    border-bottom: 3px solid #00ADB5;
+  }
+
+  /* Beneficios */
+  #beneficios img {
+    margin-left: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* Banner */
+  #banner .bannerPremium {
+    height: 400px;
+    margin-top: 30px;
+    border-radius: 20px;
+    border-top: 5px solid #00ADB5;
+    border-bottom: 5px solid #00ADB5;
+  }
+
+  /* Beneficios */
+  #beneficios img {
+    margin-left: 20px;
+  }
+
+  /* Footer */
+  .logo-footer {
+    display: initial;
+    height: 40px;
+  }
+
+  .sec h2 {
+    font-size: 24px;
+  }
+
+  .sec li {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  /* Banner */
+  #banner .bannerPremium {
+    height: 600px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  /* Beneficios */
+  #beneficios img {
+    margin-left: 100px !important;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* General */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #222831;
+}
+
+/*# sourceMappingURL=estilos_premium.css.map */

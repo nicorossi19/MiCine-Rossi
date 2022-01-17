@@ -1,6 +1,8 @@
+/* ----------------- */
+
+/* Header */
 
 /* Nav 1 */
-
 .nav1 .navbar {
     background-color: $darkBlue !important;
     & .navbar-toggler {
@@ -11,7 +13,7 @@
     }
     & .nav-link {
         color: $cyan !important;
-        font-family: 'Lato', sans-serif;
+        font-family: $primaryFont;
         font-weight: bold;
         margin-left: 40px;
     }
@@ -21,13 +23,12 @@
 }
 
 /* Nav 2 */
-
 .nav2 {
     background-color: $cyan;
     height: 30px;
     & .nav-link {
         color: $cream !important;
-        font-family: 'Lato', sans-serif;
+        font-family: $primaryFont;
         font-size: 18px;
         margin-left: 50px;
         padding: 2px 0 0 0;

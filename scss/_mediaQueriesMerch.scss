@@ -1,0 +1,278 @@
+/* ----------------- */
+/* ----------------- */
+/* ----------------- */
+
+/* Media queries */
+
+@media screen and (min-width: 430px) {
+
+    /* Nav 2 */
+
+    .nav2 .nav {
+        & .nav-link {
+            font-size: 12px;
+            margin: 5px 10px 0 0;
+        }
+
+        & .nav-link:hover {
+            font-size: 13px;
+        }
+    }
+
+    /* Promo principal */
+
+    #merch .merchPrincipal {
+        height: 150px;
+        margin-top: 30px;
+        border-radius: 5px;
+        border-top: $border430;
+        border-bottom: $border430;
+    }
+
+    .tarjeta {
+        height: 200px;
+        border-radius: 20px;
+        transition: height 200ms;
+    }
+
+    .tarjeta:hover {
+        height: 203px;
+    }
+
+    /* Total */
+
+    .separador-carrito {
+        height: 10px;
+    }
+
+    .carrito {
+        height: 30px;
+        border-radius: 10px;
+
+        & .texto {
+            display: none;
+        }
+
+        & .linea {
+            display: none;
+        }
+    }
+
+    /* Footer */
+
+    .logo-footer {
+        display: none;
+    }
+
+    .sec {
+        width: 50%;
+
+        & h2 {
+            font-size: 20px;
+        }
+
+        & li {
+            font-size: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    /* Nav 2 */
+    .nav2 .nav {
+
+        & .nav-link {
+            font-size: 16px;
+        }
+
+        & .nav-link:hover {
+            font-size: 18px;
+        }
+    }
+
+    /* Promo principal */
+
+    #merch .merchPrincipal {
+        height: 300px;
+        margin-top: 30px;
+        border-radius: 15px;
+        border-top: $border768;
+        border-bottom: $border768;
+    }
+
+    .tarjeta {
+        height: 360px;
+        border-radius: 20px;
+        transition: height 200ms;
+    }
+
+    .tarjeta:hover {
+        height: 363px;
+    }
+
+    /* Footer */
+
+    .sec {
+        width: 50%;
+
+        & h2 {
+            font-size: 20px;
+        }
+
+        & li {
+            font-size: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    /* Nav 2 */
+    .nav2 {
+        background-color: $cyan;
+        height: 30px;
+
+        & .nav-link {
+            color: $cream !important;
+            font-family: $primaryFont;
+            font-size: 18px;
+            margin-left: 50px;
+            padding: 0;
+            transition: font-size 100ms;
+        }
+
+        & .nav-link:hover {
+            font-size: 19px;
+            color: $darkBlue !important;
+            font-weight: bold;
+        }
+    }
+
+    /* Tarjetas */
+    .tarjeta {
+        height: 230px;
+        border-radius: 20px;
+        transition: height 200ms;
+    }
+
+    .tarjeta:hover {
+        height: 233px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    /* Promo principal */
+
+    #merch .merchPrincipal {
+        height: 400px;
+    }
+
+    /* Combos */
+
+    .tarjeta {
+        height: 180px;
+        border-radius: 20px;
+        transition: height 200ms;
+    }
+
+    .tarjeta:hover {
+        height: 183px;
+    }
+
+    /* Total */
+    .carrito {
+        height: 300px;
+
+        & .texto {
+            display: flex;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 200px;
+            padding-top: 15px;
+        }
+
+        & .linea {
+            display: flex;
+        }
+    }
+
+    /* Footer */
+    .logo-footer {
+        display: initial;
+        height: 40px;
+    }
+
+    .sec h2 {
+        font-size: 24px;
+    }
+
+    .sec li {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+
+    /* Promo principal */
+
+    #merch .merchPrincipal {
+        display: flex;
+        height: 600px;
+        background-size: cover;
+        background-position: center;
+        margin-top: 30px;
+        margin-bottom: 70px;
+        border-radius: 20px;
+        border-top: $border1;
+        border-bottom: $border1;
+    }
+
+    /* Tarjetas */
+    .tarjeta {
+        height: 250px;
+        border-radius: 20px;
+        transition: height 200ms;
+    }
+
+    .tarjeta:hover {
+        height: 253px;
+    }
+
+    /* Total */
+    .separador-carrito {
+        background-color: $cream;
+        height: 20px;
+    }
+
+    .carrito {
+        background-color: $cream;
+        margin-top: 10px;
+        height: 500px;
+        border-radius: 20px;
+
+        & .texto {
+            text-align: center;
+            color: $darkBlue;
+            font-family: $primaryFont;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 24px;
+            margin-bottom: 350px;
+            padding-top: 30px;
+        }
+
+        & .linea {
+            background-color: $darkBlue;
+            height: 2px;
+            margin: 0 5px 20px 5px;
+        }
+
+        & #total-valor {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 10px;
+        }
+    }
+}

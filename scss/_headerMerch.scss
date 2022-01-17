@@ -1,0 +1,42 @@
+/* ----------------- */
+
+/* Header */
+
+/* Nav 1 */
+.nav1 .navbar {
+    background-color: $darkBlue !important;
+    & .navbar-toggler {
+        border-color: $darkBlue !important;
+        & .navbar-toggler-icon {
+            background-image: url(../imgs/mb.svg) !important;
+        }
+    }
+    & .nav-link {
+        color: $cyan !important;
+        font-family: $primaryFont;
+        font-weight: bold;
+        margin-left: 40px;
+    }
+    & .nav-link:hover {
+        color: $cream !important;
+    }
+}
+
+/* Nav 2 */
+.nav2 {
+    background-color: $cyan;
+    height: 30px;
+    & .nav-link {
+        color: $cream !important;
+        font-family: $primaryFont;
+        font-size: 18px;
+        margin-left: 50px;
+        padding: 2px 0 0 0;
+        transition: font-size 100ms;
+    }
+    & .nav-link:hover {
+        font-size: 19px;
+        color: $darkBlue !important;
+        font-weight: bold;
+    }
+}

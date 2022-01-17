@@ -1,0 +1,28 @@
+@import "variablesMerch";
+@import "headerMerch";
+@import "mainMerch";
+@import "footerMerch";
+@import "mediaQueriesMerch";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $darkBlue;
+}
+
+h4 {
+    color: $cream;
+    font-family: $primaryFont;
+    font-weight: bold;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,41 @@
+/* ----------------- */
+
+/* Footer */
+
+footer .row {
+    margin-top: 30px;
+    height: 300px;
+    background-color: $lightGray;
+    & .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & .logo-footer {
+            height: 70px;
+        }
+    }
+    & .sec {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        & h2 {
+            color: $cream;
+        }
+        & ul {
+            list-style: none;
+            & li {
+                font-style: none;
+                color: $cream;
+                font-family: $primaryFont;
+                & a {
+                    text-decoration: none;
+                    color: $cream;
+                }
+                & a:hover {
+                    color: $cyan;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

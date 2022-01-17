@@ -1,0 +1,213 @@
+/* ----------------- */
+
+/* Main */
+
+/* Noticia principal */
+
+#noticia-principal .n1 {
+    display: flex;
+    height: 600px;
+    background-image: url(../imgs/n1.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+    border-radius: 20px;
+    border-top: $border1;
+    border-bottom: $border1;
+    & h2 {
+        font-family: $primaryFont;
+        font-weight: bold;
+        font-size: 40px;
+        text-shadow: $shadow1;
+        align-self: flex-end;
+        margin: 0 0 100px 100px;
+        transition: margin-left 1s;
+        & a {
+            text-decoration: none;
+            color: $cream;
+        }
+    }
+    & h2:hover {
+        margin-left: 130px;
+    }
+    & a:hover {
+        color: $cyan;
+    }
+}
+
+/* Recientes */
+
+#noticias-recientes .r1 {
+    background-image: url(../imgs/r1.jpg);
+}
+
+#noticias-recientes .r2 {
+    background-image: url(../imgs/r2.jpg);
+}
+
+#noticias-recientes .r3 {
+    background-image: url(../imgs/r3.jpg);
+}
+
+#noticias-recientes .recientes {
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    margin-top: 30px;
+    border-radius: 15px;
+    border-top: $border768;
+    border-bottom: $border768;
+    & h3 {
+        font-family: $primaryFont;
+        font-size: 24px;
+        text-shadow: $shadow1;
+        align-self: flex-end;
+        margin: 0 0 40px 50px;
+        transition: margin-left 1s;
+        & a {
+            text-decoration: none;
+            color: $cream;
+            & span {
+                font-weight: bold;
+            }
+        }
+    }
+    & h3:hover {
+        margin-left: 60px;
+    }
+    & a:hover {
+        color: $cyan;
+    }
+}
+
+/* Noticias de la semana */
+
+.separador-noticias {
+    width: 100%;
+    background-color: $cyan;
+    margin-top: 70px;
+    h2 {
+        font-size: 24px;
+        color: $cream;
+        font-family: $secondaryFont;
+        letter-spacing: 2px;
+        text-shadow: $shadow1;
+        padding-left: 15px;
+    }
+}
+
+#noticias-semanales .ns1 {
+    background-image: url(../imgs/ns1.jpeg);
+}
+
+#noticias-semanales .ns2 {
+    background-image: url(../imgs/ns2.jpg);
+}
+
+#noticias-semanales .ns3 {
+    background-image: url(../imgs/ns3.jpg);
+}
+
+#noticias-semanales .ns4 {
+    background-image: url(../imgs/ns4.jpg);
+}
+
+#noticias-semanales .ns5 {
+    background-image: url(../imgs/ns5.jpg);
+}
+
+#noticias-semanales .ns6 {
+    background-image: url(../imgs/ns6.jpg);
+}
+
+#noticias-semanales .ns7 {
+    background-image: url(../imgs/ns7.jpg);
+}
+
+#noticias-semanales .ns8 {
+    background-image: url(../imgs/ns8.jpg);
+}
+
+.noticias-semanales {
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border-top: $border768;
+    border-bottom: $border768;
+}
+
+.titulo-noticia {
+    font-family: $primaryFont;
+    font-size: 18px;
+    text-shadow: $shadow1;
+    align-self: flex-end;
+    margin: 10px 0 40px 0px;
+    & a {
+        text-decoration: none;
+        color: $cream;
+        & span {
+            font-weight: bold;
+        }
+    }
+    & a:hover {
+        color: $cyan;
+    }
+}
+
+/* Formulario */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    & h2 {
+        text-align: center;
+        color: $cream;
+        margin-top: 30px;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: $secondaryFont;
+        letter-spacing: 2px;
+        text-shadow: $shadow1;
+    }
+    & h6 {
+        text-align: center;
+        color: $cream;
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: $secondaryFont;
+        letter-spacing: 2px;
+        text-shadow: $shadow1;
+    }
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    & .formulario {
+        background-color: $cyan;
+        padding: 25px;
+        border-radius: 10px;
+        border: 2px solid $cream;
+        width: 30%;
+        & label {
+            color: $cream !important;
+            font-size: 18px;
+        }
+        & .btn-primary {
+            color: $darkBlue;
+            font-family: $secondaryFont;
+            font-weight: bold;
+            background-color: $cream !important;
+            border-color: $darkBlue !important;
+        }
+        & .btn-primary:hover {
+            color: $cream !important;
+            background-color: $lightGray !important;
+        }
+    }
+}

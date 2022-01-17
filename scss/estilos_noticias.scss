@@ -1,8 +1,8 @@
-@import "variablesCartelera";
-@import "headerCartelera";
-@import "mainCartelera";
-@import "footerCartelera";
-@import "mediaQueriesCartelera";
+@import "variablesNoticias";
+@import "headerNoticias";
+@import "mainNoticias";
+@import "footerNoticias";
+@import "mediaQueriesNoticias";
 
 * {
     padding: 0;
@@ -19,3 +19,4 @@ html {
 body {
     background-color: $darkBlue;
 }
+

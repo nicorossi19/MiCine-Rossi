@@ -1,0 +1,29 @@
+@import "variablesCandy";
+@import "headerCandy";
+@import "mainCandy";
+@import "footerCandy";
+@import "mediaQueriesCandy";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $darkBlue;
+}
+
+h4 {
+    color: $cream;
+    font-family: $primaryFont;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=estilos_candy.css.map */

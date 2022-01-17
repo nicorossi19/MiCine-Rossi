@@ -1,0 +1,89 @@
+/* ----------------- */
+
+/* Main */
+
+/* Merch principal */
+
+#merch .merchPrincipal {
+    display: flex;
+    height: 600px;
+    width: 100%;
+    background-image: url(../imgs/img6.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    border-radius: 20px;
+    border-top: $border1;
+    border-bottom: $border1;
+}
+
+/* Merch */
+
+.separador {
+    background-color: $cyan;
+    margin-top: 70px;
+    & h2 {
+        font-size: 24px;
+        color: $cream;
+        font-family: $secondaryFont;
+        letter-spacing: 2px;
+        text-shadow: $shadow1;
+        padding-left: 15px;
+    }
+}
+
+.merch {
+    margin-top: 30px;
+}
+
+.tarjeta {
+    height: 300px;
+    border-radius: 20px;
+    transition: height 200ms;
+}
+
+.tarjeta:hover {
+    height: 305px;
+}
+
+/* Sorteos */
+
+.sorteos {
+    margin-top: 30px;
+}
+
+/* Total */
+
+.separador-carrito {
+    background-color: $cream;
+    height: 20px;
+}
+
+.carrito {
+    background-color: $cream;
+    margin-top: 10px;
+    height: 500px;
+    border-radius: 20px;
+    & .texto {
+        text-align: center;
+        color: $darkBlue;
+        font-family: $primaryFont;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 24px;
+        margin-bottom: 350px;
+        padding-top: 30px;
+    }
+    & .linea {
+        background-color: $darkBlue;
+        height: 2px;
+        margin: 0 5px 20px 5px;
+    }
+    & #total-valor {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10px;
+    }
+    
+}
